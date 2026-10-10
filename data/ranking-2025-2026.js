@@ -40,7 +40,7 @@ window.ECAA_RANKING = {
     {
       id: "buiha", name: "BUIHA", country: "United Kingdom", cat: "eu",
       teams: 23, pop: 69.3, games: 9, live: 4, avg: null, max: null, est: ["teams"],
-      note: "Games = Checking Division 1 (North 10, South 8). Teams = the association's 23 clubs. Attendance is not published. Varsity matches (Sheffield, Nottingham) are not part of BUIHA and are not counted.",
+      note: "Games = Checking Division 1 (North 10, South 8). Teams = the association's 23 clubs. Attendance is not published: BUIHA's own game centre records box scores, shots, events and MVPs but no crowd figures, and its news posts give none. Varsity matches (Sheffield, Nottingham) are not part of BUIHA and are not counted.",
       src: ["https://www.eliteprospects.com/league/buiha/2025-2026"]
     },
     {
