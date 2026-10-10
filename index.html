@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ECAA University Hockey Ranking 2025/26</title>
+<meta name="description" content="Oficiální žebříček univerzitních hokejových soutěží mužů ECAA za sezónu 2025/26 v kategoriích Evropa a Svět.">
+<meta property="og:title" content="ECAA University Hockey Ranking 2025/26">
+<meta property="og:description" content="Vítězové: ULLH (Evropa) a NCAA Division I (Svět). Žebříček 16 univerzitních hokejových soutěží mužů.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="board">
+  <div class="wrap">
+    <div class="org">ECAA · European College Athletics Association</div>
+    <h1>University Hockey Ranking <span class="season" id="seasonLabel">2025/26</span></h1>
+    <p class="lede">Oficiální roční žebříček ECAA. Hodnotí univerzitní hokejové soutěže mužů v kategoriích Evropa a Svět podle pěti kritérií se stejnou vahou: počet zápasů, kvalita live statistik, průměrná a maximální návštěvnost a počet týmů na milion obyvatel.</p>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" id="tab-eu" aria-selected="true" data-cat="eu">Evropa</button>
+      <button class="tab" role="tab" id="tab-world" aria-selected="false" data-cat="world">Svět</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="winners" aria-label="Vítězové">
+    <div class="win"><div class="wl">Vítěz · Evropa</div><div class="wn" id="winEu"></div><div class="ws" id="winEuS"></div></div>
+    <div class="win"><div class="wl">Vítěz · Svět</div><div class="wn" id="winW"></div><div class="ws" id="winWS"></div></div>
+  </section>
+  <section>
+    <h2 id="rankTitle">Evropa</h2>
+    <div class="scroll"><table id="rankTable" aria-describedby="rankTitle"></table></div>
+    <p class="foot">Hodnoty označené <span class="est">≈</span> jsou odhady z veřejných zdrojů. „Nezveřejněno“ znamená, že liga údaj nepublikuje; v kritériu dostává 0 bodů. Stav dat k 8. 10. 2026.</p>
+  </section>
+
+  <section>
+    <h2>Metodika</h2>
+    <div class="method">
+      <div>
+        <ul class="crit">
+          <li>Zápasy na tým v základní části <b>20 %</b></li>
+          <li>Kvalita live statistik (0–5) <b>20 %</b></li>
+          <li>Průměrná návštěvnost ligy <b>20 %</b></li>
+          <li>Maximální návštěvnost na 1 utkání <b>20 %</b></li>
+          <li>Počet týmů na 1 milion obyvatel země <b>20 %</b></li>
+        </ul>
+      </div>
+      <div>
+        <p>Každé kritérium se převede na 0–100 bodů. Liga s nejvyšší hodnotou v žebříčku dostane 100 bodů, ostatní poměrnou část (hodnota ÷ nejlepší hodnota × 100). U návštěvnosti se používá logaritmická škála (log hodnoty ÷ log nejlepší hodnoty × 100), aby jedno rekordní utkání nesrazilo ostatní ligy k nule: liga s desetinou diváků nejlepší ligy dostane podle velikosti čísel zhruba 65–80 bodů místo 10. Live statistiky se počítají přímo ze škály: 5 bodů = 100.</p>
+        <p>Žebříček Evropa obsahuje jen evropské soutěže, žebříček Svět všechny soutěže včetně evropských. Body se v každém žebříčku počítají zvlášť. Hodnotí se jen mužské soutěže. Maximální návštěvnost je nejvyšší počet diváků na jednom utkání, včetně play-off a exhibičních derby. Počet týmů se dělí počtem obyvatel země. U provinčních lig ACAC (Alberta) a BCIHL (Britská Kolumbie) se dělí počtem obyvatel provincie, u EUHL součtem obyvatel zúčastněných zemí.</p>
+      </div>
+      <div>
+        <ul class="scale">
+          <li><span>0</span>Žádné statistiky</li>
+          <li><span>1</span>Jen konečné výsledky</li>
+          <li><span>2</span>Střelci gólů a asistence</li>
+          <li><span>3</span>Kompletní box score (střely, tresty, brankáři)</li>
+          <li><span>4</span>Průběžné hráčské a týmové statistiky za sezónu</li>
+          <li><span>5</span>Live play-by-play během zápasu</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Zdroje a poznámky</h2>
+    <div class="srcs" id="srcList"></div>
+  </section>
+
+</main>
+<footer class="wrap">ECAA · European College Athletics Association · University Hockey Ranking 2025/26 · Vydáno 8. 10. 2026. Žebříček se zveřejňuje jednou ročně po skončení sezóny. Počty obyvatel podle odhadů za rok 2025.</footer>
+
+<script src="data/2025-26.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
