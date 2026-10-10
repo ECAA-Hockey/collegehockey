@@ -45,15 +45,15 @@ window.ECAA_RANKING = {
     },
     {
       id: "ncaa", name: "NCAA Division I", country: "USA", cat: "world",
-      teams: 63, pop: 340.1, games: 34, live: 5, avg: 3200, max: 74575, est: ["avg"],
-      note: "Maximum: Penn State v Michigan State, outdoors at Beaver Stadium, 31 January 2026 (74,575). Average estimated; the 2025/2026 USCHO attendance table was not available.",
-      src: ["https://en.wikipedia.org/wiki/2025%E2%80%9326_NCAA_Division_I_men%27s_ice_hockey_season", "https://gopsusports.com/news/2026/01/31/no-5-mens-hockey-falls-to-no-2-michigan-state-5-4-in-ot-thriller-at-beaver-stadium", "https://msumavericks.com/news/2026/6/29/general-maverick-attendances-thrive-during-2025-26-athletic-season.aspx"]
+      teams: 63, pop: 340.1, games: 34, live: 5, avg: 3571, max: 74575, est: [],
+      note: "Maximum: Penn State v Michigan State, outdoors at Beaver Stadium, 31 January 2026 (74,575). Average: 3,571 (3,889,143 spectators over 1,089 home games of 63 teams, USCHO attendance table 2025/2026).",
+      src: ["https://en.wikipedia.org/wiki/2025%E2%80%9326_NCAA_Division_I_men%27s_ice_hockey_season", "https://gopsusports.com/news/2026/01/31/no-5-mens-hockey-falls-to-no-2-michigan-state-5-4-in-ot-thriller-at-beaver-stadium", "https://www.uscho.com/stats/attendance/division-i-men/2025-2026"]
     },
     {
       id: "ncaa3", name: "NCAA Division III", country: "USA", cat: "world",
-      teams: 91, pop: 340.1, games: 25, live: 5, avg: 400, max: 3837, est: ["avg"],
-      note: "Average based on the 2024/2025 USCHO table (409); 2025/2026 not available. Maximum: national final Hamilton v Hobart, Utica, 29 March 2026.",
-      src: ["https://en.wikipedia.org/wiki/2025%E2%80%9326_NCAA_Division_III_men%27s_ice_hockey_season", "https://en.wikipedia.org/wiki/2026_NCAA_Division_III_men%27s_ice_hockey_tournament", "https://pivotstats.uscho.com/stats/attendance/division-iii-men"]
+      teams: 91, pop: 340.1, games: 25, live: 5, avg: 395, max: 3837, est: [],
+      note: "Average: 395 (457,451 spectators over 1,159 home games of 91 teams, USCHO attendance table 2025/2026; Utica leads with 3,016 per game). Maximum: national final Hamilton v Hobart, Utica, 29 March 2026.",
+      src: ["https://en.wikipedia.org/wiki/2025%E2%80%9326_NCAA_Division_III_men%27s_ice_hockey_season", "https://en.wikipedia.org/wiki/2026_NCAA_Division_III_men%27s_ice_hockey_tournament", "https://www.uscho.com/stats/attendance/division-iii-men/2025-2026"]
     },
     {
       id: "usports", name: "U SPORTS", country: "Canada", cat: "world",
