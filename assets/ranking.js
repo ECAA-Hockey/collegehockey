@@ -1,16 +1,15 @@
 // ECAA College Hockey Ranking – scoring and rendering.
-// Methodology (see CLAUDE.md): 5 criteria, 20 % each, scored 0–100 within each ranking.
+// Methodology (see CLAUDE.md): 5 criteria scored 0–100 within each ranking; weights 22.5 % ×4, teams per million 10 %.
 (function () {
   const R = window.ECAA_RANKING;
   if (!R) return;
   const CRIT = [
-    { k: "games", label: "Games", type: "rel" },
-    { k: "live", label: "Live stats", type: "scale" },
-    { k: "avg", label: "Avg. attendance", type: "log" },
-    { k: "max", label: "Max. attendance", type: "log" },
-    { k: "tpm", label: "Teams / 1M pop.", type: "rel" }
+    { k: "games", label: "Games", type: "rel", w: 0.225 },
+    { k: "live", label: "Live stats", type: "scale", w: 0.225 },
+    { k: "avg", label: "Avg. attendance", type: "log", w: 0.225 },
+    { k: "max", label: "Max. attendance", type: "log", w: 0.225 },
+    { k: "tpm", label: "Teams / 1M pop.", type: "rel", w: 0.10 }
   ];
-  const WEIGHT = 0.2;
   const $ = (s) => document.querySelector(s);
   const num = (n) => (n == null || n === "" || isNaN(n) ? null : Number(n));
   const nf = new Intl.NumberFormat("en-GB");
@@ -35,7 +34,7 @@
           else if (c.type === "log") p = best[c.k] > 0 ? Math.log10(1 + v) / Math.log10(1 + best[c.k]) * 100 : 0;
           else p = best[c.k] > 0 ? v / best[c.k] * 100 : 0;
         }
-        s[c.k] = p; tot += p * WEIGHT;
+        s[c.k] = p; tot += p * c.w;
       });
       return Object.assign({}, l, { s, tot: Math.round(tot * 10) / 10 });
     }).sort((a, b) => b.tot - a.tot);

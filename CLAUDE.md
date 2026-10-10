@@ -19,7 +19,7 @@ Cesty jsou relativní (`../`, `../../`), takže web funguje i otevřený lokáln
 
 ## Metodika žebříčku (neměnit bez souhlasu ECAA)
 
-Pět kritérií, každé 20 %:
+Pět kritérií; váhy: `games`, `live`, `avg`, `max` po 22,5 %, `tpm` 10 % (váhy jsou v `assets/ranking.js`, pole `w`):
 
 | Klíč | Kritérium | Body 0–100 |
 |---|---|---|
