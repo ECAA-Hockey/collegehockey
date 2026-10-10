@@ -45,7 +45,11 @@
     const isEst = (l.est || []).includes(k) || (k === "tpm" && (l.est || []).includes("teams"));
     const e = isEst ? '<span class="est" title="Estimate">≈</span>' : "";
     if (k === "live") return e + v + " / 5";
-    if (k === "tpm") return e + nf2.format(v) + ` <span title="${l.tpmTeams ?? l.teams} teams, ${nf2.format(l.pop)} M population">(${l.tpmTeams ?? l.teams})</span>`;
+    if (k === "tpm") {
+      const natl = l.tpmTeams != null && l.tpmTeams !== l.teams;
+      const label = natl ? `${l.tpmTeams} in ${l.country === "USA" ? "USA" : "Canada"}` : `${l.teams} teams`;
+      return e + nf2.format(v) + ` <span title="${natl ? "National total: " + l.tpmTeams + " college teams" : l.teams + " teams"}, ${nf2.format(l.pop)} M population">· ${label}</span>`;
+    }
     return e + nf.format(v);
   }
 
@@ -73,7 +77,7 @@
     rows.forEach((r, i) => {
       if (r.tot !== prev) { rank = i + 1; prev = r.tot; }
       h += `<tr><td class="rank ${rank <= 3 ? "r" + rank : ""}">${rank}</td>
-      <td><div class="lg">${esc(r.name)}</div><div class="ct">${esc(r.country)}</div></td>
+      <td><div class="lg">${esc(r.name)}</div><div class="ct">${esc(r.country)} · ${r.teams} teams</div></td>
       <td class="total"><div class="tot-row"><span class="tot-num">${nf1.format(r.tot)}</span><span class="bar"><i style="width:${r.tot}%"></i></span></div></td>` +
         CRIT.map((c) => { const rv = raw(r, c.k); return `<td class="sub">${rv == null ? '<span class="miss">0</span>' : Math.round(r.s[c.k])}<small>${rv == null ? "not published" : rv}</small></td>`; }).join("") + "</tr>";
     });
