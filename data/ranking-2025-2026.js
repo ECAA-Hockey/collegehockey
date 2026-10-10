@@ -27,9 +27,9 @@ window.ECAA_RANKING = {
     },
     {
       id: "fcaa", name: "FCAA", country: "Finland", cat: "eu",
-      teams: 25, pop: 5.6, games: 4, live: 4, avg: null, max: null, est: ["games", "live"],
-      note: "25 teams, 4 regular-season games (Swiss system) plus a finals tournament. Format and stats verified for 2024/2025; 2025/2026 data not available. Attendance is not published. Final: HC Lumikot v Parru HT Red, Vantaa, April 2026.",
-      src: ["https://www.gameresultsonline.com/fcaa/fcaa-2024-2025/pages/what-is-fcaa?lang=en_US", "https://www.jatkoaika.com/Artikkeli/FCAA-finaalissa-oli-sekavat-tuplajuhlat-%E2%80%93-mestaruusjuhlat-alkoivat-ensi-kerran-jo-toisen-er%C3%A4n-j%C3%A4lkeen/269038"]
+      teams: 25, pop: 5.6, games: 4, live: 4, avg: null, max: 2031, est: ["games", "live"],
+      note: "25 teams, 4 regular-season games (Swiss system) plus a finals tournament. Format and stats verified for 2024/2025; 2025/2026 data not available. Average attendance is not published. Season record: 2,031 spectators at the Parru Fights Cancer games, Kisapuisto ice hall, Lappeenranta, autumn 2025 (two games on one bill, as reported by Jatkoaika). Final: HC Lumikot v Parru HT Red, Vantaa, April 2026.",
+      src: ["https://www.gameresultsonline.com/fcaa/fcaa-2024-2025/pages/what-is-fcaa?lang=en_US", "https://www.jatkoaika.com/Artikkeli/FCAAn-kolmas-kausi-alkoi-%E2%88%92-yleis%C3%B6enn%C3%A4tys-rikki-Lappeenrannassa/266898", "https://www.jatkoaika.com/Artikkeli/FCAA-finaalissa-oli-sekavat-tuplajuhlat-%E2%80%93-mestaruusjuhlat-alkoivat-ensi-kerran-jo-toisen-er%C3%A4n-j%C3%A4lkeen/269038"]
     },
     {
       id: "suhl", name: "SUHL", country: "Sweden", cat: "eu",
