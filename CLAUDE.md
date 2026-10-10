@@ -9,7 +9,7 @@ Statický web ECAA (HTML, CSS, vanilla JS, bez buildu a bez závislostí). Jazyk
 - `ranking/index.html` – přesměrování na nejnovější ročník
 - `news/index.html` – všechny novinky po měsících s filtrem podle ligy
 - `news/2026-10-10-ecaa-college-hockey-ranking-2025-2026.html` – článek ECAA o zveřejnění žebříčku
-- `assets/styles.css` – vzhled (barvy jako tokeny v `:root`, světlý i tmavý režim)
+- `assets/styles.css` – vzhled (barvy jako tokeny v `:root`; web je vždy bílý, bez tmavého režimu)
 - `assets/ranking.js` – výpočet bodů a vykreslení žebříčku a lídrů
 - `assets/news.js` – vykreslení feedu novinek
 - `data/ranking-2025-2026.js` – data sezóny (`window.ECAA_RANKING`)

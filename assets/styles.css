@@ -1,9 +1,10 @@
-/* Layout: pro-league sports site — black top bar, dark title band, white page, standings-style tables, sharp edges.
+/* White site (light only, by choice). Layout: pro-league sports site — black top bar, white title band and page, standings-style tables, sharp edges.
    ECAA identity: black, white and one accent (orange). */
 :root{
-  --page:#f4f4f4; --surface:#ffffff; --ink:#111111; --muted:#5f6368; --line:#e1e1e1; --line-strong:#111111;
-  --bar:#000000; --bar-ink:#ffffff; --band:#141414; --band-ink:#ffffff; --band-muted:#a3a3a3;
-  --head:#f0f0f0; --accent:#e8590c; --accent-ink:#ffffff; --accent-text:#c2410c;
+  --page:#ffffff; --surface:#ffffff; --ink:#111111; --muted:#5f6368; --line:#e4e4e4; --line-strong:#111111;
+  --bar:#000000; --bar-ink:#ffffff; --band:#ffffff; --band-ink:#111111; --band-muted:#6b6b6b;
+  --tile:#111111; --tile-ink:#ffffff; --tile-muted:#a3a3a3; --brand-muted:#a3a3a3;
+  --head:#f3f3f3; --accent:#e8590c; --accent-ink:#ffffff; --accent-text:#c2410c;
   --orange:#e8590c; --orange-ink:#ffffff;
   --gold:#b8860b; --silver:#7c8590; --bronze:#9a5b2c; --miss:#b42318;
   --est-bg:#fff1e6; --est-ink:#9a3412;
@@ -11,20 +12,6 @@
   --f-body:"Barlow","Helvetica Neue",Arial,sans-serif;
   color-scheme:light;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --page:#0d0d0d; --surface:#171717; --ink:#f2f2f2; --muted:#a1a1a1; --line:#2a2a2a; --line-strong:#f2f2f2;
-  --bar:#000000; --bar-ink:#ffffff; --band:#000000; --band-ink:#ffffff; --band-muted:#9a9a9a;
-  --head:#202020; --accent:#f76707; --accent-ink:#ffffff; --accent-text:#ff8a3d;
-  --orange:#f76707; --orange-ink:#ffffff;
-  --gold:#e0b341; --silver:#b5bcc4; --bronze:#d08a57; --miss:#ff6b5e;
-  --est-bg:#3a2210; --est-ink:#ffb27a; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --page:#0d0d0d; --surface:#171717; --ink:#f2f2f2; --muted:#a1a1a1; --line:#2a2a2a; --line-strong:#f2f2f2;
-  --bar:#000000; --bar-ink:#ffffff; --band:#000000; --band-ink:#ffffff; --band-muted:#9a9a9a;
-  --head:#202020; --accent:#f76707; --accent-ink:#ffffff; --accent-text:#ff8a3d;
-  --orange:#f76707; --orange-ink:#ffffff;
-  --gold:#e0b341; --silver:#b5bcc4; --bronze:#d08a57; --miss:#ff6b5e;
-  --est-bg:#3a2210; --est-ink:#ffb27a; color-scheme:dark}
 
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -40,14 +27,14 @@ a:focus-visible,.tab:focus-visible,button:focus-visible,summary:focus-visible{ou
 .topbar{display:flex;justify-content:space-between;align-items:center;gap:8px 24px;flex-wrap:wrap;min-height:60px;padding-block:8px}
 .brand{color:var(--bar-ink);text-decoration:none;display:flex;align-items:center;gap:12px}
 .brand b{font-family:var(--f-display);font-weight:900;font-size:30px;letter-spacing:.02em;line-height:1;font-style:italic}
-.brand span{font-family:var(--f-display);font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--band-muted);border-left:1px solid #3a3a3a;padding-left:12px;line-height:1.15;max-width:200px}
+.brand span{font-family:var(--f-display);font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--brand-muted);border-left:1px solid #3a3a3a;padding-left:12px;line-height:1.15;max-width:200px}
 nav.main{display:flex;gap:2px;flex-wrap:wrap}
 nav.main a{color:var(--bar-ink);text-decoration:none;font-family:var(--f-display);font-weight:800;font-size:17px;text-transform:uppercase;letter-spacing:.03em;padding:10px 14px;border-bottom:3px solid transparent;margin-bottom:-11px}
 nav.main a:hover{color:var(--accent)}
 nav.main a[aria-current="page"]{border-bottom-color:var(--bar-ink)}
 
 /* Title band */
-header.board{background:var(--band);color:var(--band-ink)}
+header.board{background:var(--band);color:var(--band-ink);border-bottom:1px solid var(--line)}
 .hero{padding-block:28px 0}
 .eyebrow{font-family:var(--f-display);font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
 h1{font-family:var(--f-display);font-weight:900;font-size:clamp(38px,6.5vw,72px);line-height:.92;margin:6px 0 10px;text-transform:uppercase;letter-spacing:-.005em;text-wrap:balance}
@@ -68,8 +55,8 @@ h2{font-family:var(--f-display);font-weight:900;font-size:28px;text-transform:up
 .more:hover{color:var(--accent-text)}
 
 /* Leaders (stat-leader tiles) */
-.leaders{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2px;background:var(--line)}
-.leader{background:var(--surface);padding:18px 20px;min-width:0;position:relative}
+.leaders{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.leader{background:var(--surface);border:1px solid var(--line);padding:18px 20px;min-width:0;position:relative}
 .leader::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--accent)}
 .leader .wl{font-family:var(--f-display);font-weight:800;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .leader .wn{font-family:var(--f-display);font-weight:900;font-size:clamp(34px,5vw,48px);text-transform:uppercase;line-height:1;margin-top:6px}
@@ -80,14 +67,14 @@ h2{font-family:var(--f-display);font-weight:900;font-size:28px;text-transform:up
 
 /* Records */
 .records{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2px}
-.record{background:var(--band);color:var(--band-ink);padding:20px 22px;min-width:0;border-top:6px solid var(--accent)}
-.record.world{border-top-color:var(--silver)}
-.record .wl{font-family:var(--f-display);font-weight:800;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--band-muted)}
+.record{background:var(--tile);color:var(--tile-ink);padding:20px 22px;min-width:0;border-top:6px solid var(--accent)}
+.record.world{border-top-color:var(--tile)}
+.record .wl{font-family:var(--f-display);font-weight:800;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--tile-muted)}
 .record .num{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 10px;font-family:var(--f-display);font-weight:900;font-size:clamp(52px,8vw,76px);line-height:.95;margin:6px 0 8px;font-variant-numeric:tabular-nums}
-.record .num small{font-size:.32em;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--band-muted)}
+.record .num small{font-size:.32em;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--tile-muted)}
 .record p{margin:0;font-size:15px}
-.record .src{font-size:13px;color:var(--band-muted);margin-top:10px}
-.record .src a{color:var(--band-ink)}
+.record .src{font-size:13px;color:var(--tile-muted);margin-top:10px}
+.record .src a{color:var(--tile-ink)}
 
 /* Standings table */
 .scroll{overflow-x:auto;background:var(--surface);border:1px solid var(--line)}
