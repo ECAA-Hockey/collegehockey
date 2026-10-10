@@ -1,4 +1,4 @@
-// ECAA University Hockey Ranking – scoring and rendering.
+// ECAA College Hockey Ranking – scoring and rendering.
 // Methodology (see CLAUDE.md): 5 criteria, 20 % each, scored 0–100 within each ranking.
 (function () {
   const R = window.ECAA_RANKING;

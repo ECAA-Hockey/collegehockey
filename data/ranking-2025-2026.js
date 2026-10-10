@@ -1,4 +1,4 @@
-// ECAA University Hockey Ranking – season 2025/2026 data.
+// ECAA College Hockey Ranking – season 2025/2026 data.
 // est  = keys whose value is an estimate (marked ≈ on the site).
 // null = the league does not publish the figure (0 points for that criterion).
 // pop  = population in millions (country; ACAC and BCIHL use their province; EUHL the sum of participating countries).

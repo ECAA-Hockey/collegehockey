@@ -4,11 +4,11 @@ Statický web ECAA (HTML, CSS, vanilla JS, bez buildu a bez závislostí). Jazyk
 
 ## Struktura
 
-- `index.html` – úvod: lídři aktuálního žebříčku, rekordy návštěvnosti, posledních 9 novinek
+- `index.html` – úvod: hlavní je žebříček (lídři, tabulka Europe/World, rekordy návštěvnosti); vlevo sloupec s novinkami chronologicky (25 nejnovějších), nahoře v něm zvýrazněný článek (`pinned: true` v `data/news.js`). Na mobilu je žebříček první a novinky pod ním.
 - `ranking/2025-2026/index.html` – žebříček sezóny 2025/2026 (tabulky Europe/World, metodika, zdroje)
 - `ranking/index.html` – přesměrování na nejnovější ročník
 - `news/index.html` – všechny novinky po měsících s filtrem podle ligy
-- `news/2026-10-10-ecaa-university-hockey-ranking-2025-2026.html` – článek ECAA o zveřejnění žebříčku
+- `news/2026-10-10-ecaa-college-hockey-ranking-2025-2026.html` – článek ECAA o zveřejnění žebříčku
 - `assets/styles.css` – vzhled (barvy jako tokeny v `:root`, světlý i tmavý režim)
 - `assets/ranking.js` – výpočet bodů a vykreslení žebříčku a lídrů
 - `assets/news.js` – vykreslení feedu novinek
@@ -34,13 +34,13 @@ Pět kritérií, každé 20 %:
 - `pop` = obyvatelé země v milionech; ACAC = Alberta, BCIHL = Britská Kolumbie, EUHL = součet zúčastněných zemí.
 - Jen mužské soutěže. Zápasy mimo ligu (např. Varsity u BUIHA) se nezapočítávají.
 - Live statistiky: 0 nic, 1 výsledky, 2 střelci a asistence, 3 box score, 4 sezónní statistiky, 5 live play-by-play.
-- V textech webu se používá „Leader“, ne „Winner“. Sezóna se píše `2025/2026`.
+- Název žebříčku je **College Hockey Ranking**. V textech webu se používá „Leader“, ne „Winner“. Sezóna se píše `2025/2026`.
 
 ## Novinky (data/news.js)
 
 - **Pravidlo: jeden článek za každou ligu za každý měsíc**, aby byl feed rovnoměrný. Když liga v daném měsíci nic nevydala (letní pauza), měsíc se vynechá.
 - Položka: `date` (YYYY-MM-DD), `league` (klíč z `ECAA_LEAGUES`), `title` (anglický titulek), `original` (titulek v originále, nebo `null`), `source`, `url` (skutečná URL článku, nikdy nevymýšlet), `summary` (jedna anglická věta).
-- Pole je seřazené od nejnovějšího. Články ECAA mají `league: "ecaa"` a `url` relativní ke kořeni webu (`news/…html`).
+- Pole je seřazené od nejnovějšího. Zvýrazněný článek nahoře v levém sloupci má `pinned: true` (vždy jen jeden; nový ročník žebříčku = přesunout `pinned` na nový článek). Články ECAA mají `league: "ecaa"` a `url` relativní ke kořeni webu (`news/…html`).
 - Liga ACHA je ve feedu jedna (`acha`) pro všechny tři divize.
 
 ## Rekordy návštěvnosti (index.html)
@@ -53,7 +53,7 @@ Pět kritérií, každé 20 %:
 1. Zkopírovat `data/ranking-2025-2026.js` → `data/ranking-2026-2027.js`, aktualizovat hodnoty, `season`, `published`, `dataAsOf`, `note`, `src`.
 2. Zkopírovat `ranking/2025-2026/` → `ranking/2026-2027/`, upravit cestu k datům, titulky a datum zveřejnění. Starý ročník zůstává jako archiv.
 3. `ranking/index.html` přesměrovat na nový ročník, na `index.html` přepnout data a odkazy a v navigaci odkaz „Ranking“.
-4. Napsat článek ECAA o zveřejnění (`news/YYYY-MM-DD-ecaa-university-hockey-ranking-RRRR-RRRR.html` podle vzoru) a přidat ho do `data/news.js`.
+4. Napsat článek ECAA o zveřejnění (`news/YYYY-MM-DD-ecaa-college-hockey-ranking-RRRR-RRRR.html` podle vzoru) a přidat ho do `data/news.js`.
 
 ## Nasazení
 

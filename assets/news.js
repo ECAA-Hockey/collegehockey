@@ -1,10 +1,16 @@
-// ECAA news feed rendering. Container: <div id="feed" data-limit="9" data-base="" data-group="month"></div>
+// ECAA news feed rendering.
+// <div id="feed" data-limit="9" data-base="" data-group="month"> – cards (optionally grouped by month)
+// <ol id="feed" data-mode="list"> – compact chronological list (home sidebar); the pinned item goes to #featured
+
 (function () {
   const NEWS = window.ECAA_NEWS || [], LG = window.ECAA_LEAGUES || {};
   const box = document.getElementById("feed"); if (!box) return;
   const limit = Number(box.dataset.limit || 0);
   const base = box.dataset.base || "";
   const group = box.dataset.group === "month";
+  const listMode = box.dataset.mode === "list";
+  const featBox = document.getElementById("featured");
+  const pinned = featBox ? NEWS.find((n) => n.pinned) : null;
   const chipsBox = document.getElementById("chips");
   const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (m) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[m]));
   const dfmt = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
@@ -26,8 +32,26 @@
     </article>`;
   }
 
+  function row(n) {
+    const internal = n.league === "ecaa";
+    const href = internal ? base + n.url : n.url;
+    const ext = internal ? "" : ' target="_blank" rel="noopener"';
+    const lg = LG[n.league] || { name: n.league };
+    return `<li><div class="meta"><time datetime="${n.date}">${dfmt.format(d(n.date))}</time><span class="tag">${esc(lg.name)}</span></div>
+      <a href="${esc(href)}"${ext}>${esc(n.title)}</a></li>`;
+  }
+
+  if (pinned) {
+    featBox.innerHTML = `<a class="featured" href="${esc(base + pinned.url)}">
+      <span class="wl">Featured · ${dfmt.format(d(pinned.date))}</span>
+      <span class="ft">${esc(pinned.title)}</span>
+      <span class="fs">${esc(pinned.summary)}</span>
+      <span class="fr">Read the announcement →</span></a>`;
+  }
+
   function render() {
-    let items = NEWS.filter((n) => filter === "all" || n.league === filter);
+    let items = NEWS.filter((n) => (filter === "all" || n.league === filter) && n !== pinned);
+    if (listMode) { box.innerHTML = items.slice(0, limit || items.length).map(row).join(""); return; }
     if (limit) items = items.slice(0, limit);
     if (!items.length) { box.innerHTML = '<p class="empty">No articles for this league yet.</p>'; return; }
     if (!group) { box.className = "feed"; box.innerHTML = items.map(card).join(""); return; }

@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>ECAA – University Hockey Ranking 2025/2026</title>
+<title>ECAA – College Hockey Ranking 2025/2026</title>
 <meta name="description" content="European College Athletics Association. The annual ranking of men's university ice hockey competitions in Europe and the world, attendance records and league news.">
-<meta property="og:title" content="ECAA – University Hockey Ranking 2025/2026">
+<meta property="og:title" content="ECAA – College Hockey Ranking 2025/2026">
 <meta property="og:description" content="European College Athletics Association. The annual ranking of men's university ice hockey competitions in Europe and the world, attendance records and league news.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ECAA – European College Athletics Association">
@@ -23,22 +23,32 @@
     </div>
     <div class="hero">
       <div class="eyebrow">Season 2025/2026 · Published 10 October 2026</div>
-      <h1>University Hockey Ranking <span class="season">2025/2026</span></h1>
-      <p class="lede">The annual ECAA ranking of men's university ice hockey competitions, in two categories: Europe and World. Five equally weighted criteria: games per team, live statistics, average attendance, maximum attendance and teams per million inhabitants.</p>
+      <h1>College Hockey Ranking <span class="season">2025/2026</span></h1>
+      <p class="lede">The annual ECAA ranking of men's university ice hockey competitions. Five equally weighted criteria: games per team, live statistics, average attendance, maximum attendance and teams per million inhabitants.</p>
+      <div class="tabs" role="tablist">
+        <button class="tab" role="tab" id="tab-eu" aria-selected="true" data-cat="eu">Europe</button>
+        <button class="tab" role="tab" id="tab-world" aria-selected="false" data-cat="world">World</button>
+      </div>
     </div>
   </div>
 </header>
 
-<main class="wrap">
-  <section aria-labelledby="leadTitle">
-    <div class="sec-head"><h2 id="leadTitle">Leaders 2025/2026</h2><a class="more" href="ranking/2025-2026/">Full ranking →</a></div>
-    <div class="leaders">
+<div class="wrap layout">
+  <main class="primary">
+    <section aria-label="Leaders">
+      <div class="leaders">
       <div class="leader" id="leaderEu"><div class="wl">Leader · Europe</div><div class="wn"></div><div class="ws"></div><ol start="2"></ol></div>
       <div class="leader" id="leaderWorld"><div class="wl">Leader · World</div><div class="wn"></div><div class="ws"></div><ol start="2"></ol></div>
     </div>
   </section>
 
-  <section aria-labelledby="recTitle">
+    <section>
+      <div class="sec-head"><h2 id="rankTitle">Europe</h2><a class="more" href="ranking/2025-2026/">Methodology and sources →</a></div>
+      <div class="scroll"><table id="rankTable" aria-describedby="rankTitle"></table></div>
+      <p class="foot">Each column shows points (0–100) and the underlying value. Values marked <span class="est">≈</span> are estimates from public sources. “Not published” means the league does not publish the figure and scores 0 for that criterion.</p>
+    </section>
+
+    <section aria-labelledby="recTitle">
     <div class="sec-head"><h2 id="recTitle">University hockey attendance records</h2></div>
     <div class="records">
       <div class="record world">
@@ -55,13 +65,15 @@
       </div>
     </div>
   </section>
+  </main>
 
-  <section aria-labelledby="newsTitle">
-    <div class="sec-head"><h2 id="newsTitle">Latest news</h2><a class="more" href="news/">All news →</a></div>
-    <div id="feed" class="feed" data-limit="9" data-base=""></div>
-  </section>
-</main>
-<footer class="wrap">ECAA · European College Athletics Association · collegehockey.eu · The University Hockey Ranking is published once a year after the season ends. League articles link to their original sources.</footer>
+  <aside class="sidebar" aria-labelledby="newsTitle">
+    <div id="featured"></div>
+    <div class="sec-head"><h2 id="newsTitle">News</h2><a class="more" href="news/">All news →</a></div>
+    <ol id="feed" class="newslist" data-mode="list" data-limit="25" data-base=""></ol>
+  </aside>
+</div>
+<footer class="wrap">ECAA · European College Athletics Association · collegehockey.eu · The College Hockey Ranking is published once a year after the season ends. League articles link to their original sources.</footer>
 
 <script src="data/ranking-2025-2026.js"></script>
 <script src="data/news.js"></script>

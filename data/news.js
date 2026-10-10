@@ -1,4 +1,5 @@
 // ECAA news feed. One league article per league per month; ECAA articles use league "ecaa" and a site-relative url.
+// pinned: true = featured at the top of the home-page sidebar (one item).
 // url of league articles = external source. original = headline in the original language (null if English).
 window.ECAA_LEAGUES = {
   "ecaa": {
@@ -66,10 +67,11 @@ window.ECAA_NEWS = [
   {
     "date": "2026-10-10",
     "league": "ecaa",
-    "title": "ECAA publishes the University Hockey Ranking 2025/2026",
+    "pinned": true,
+    "title": "ECAA publishes the College Hockey Ranking 2025/2026",
     "original": null,
     "source": "ECAA",
-    "url": "news/2026-10-10-ecaa-university-hockey-ranking-2025-2026.html",
+    "url": "news/2026-10-10-ecaa-college-hockey-ranking-2025-2026.html",
     "summary": "ULLH leads Europe and NCAA Division I leads the world in the annual ranking of 16 men's university hockey competitions."
   },
   {

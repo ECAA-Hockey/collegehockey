@@ -23,7 +23,7 @@ body{margin:0;background:var(--ice);color:var(--ink);font-family:var(--f-body);f
 img{max-width:100%}
 [hidden]{display:none!important}
 a{color:var(--blue)}
-.wrap{max-width:1180px;margin:0 auto;padding-inline:16px}
+.wrap{max-width:1280px;margin:0 auto;padding-inline:16px}
 
 /* Header */
 header.board{background:var(--navy);color:var(--navy-ink)}
@@ -133,6 +133,31 @@ details.src ul{font-size:13px;margin:6px 0 0;padding-left:18px;overflow-wrap:any
 .month{font-family:var(--f-display);font-weight:700;font-size:22px;text-transform:uppercase;letter-spacing:.03em;margin:26px 0 10px;border-bottom:2px solid var(--line);padding-bottom:4px}
 .month:first-of-type{margin-top:0}
 .empty{color:var(--muted)}
+
+/* Home layout: news sidebar left, ranking main */
+.layout{display:grid;grid-template-columns:300px minmax(0,1fr);grid-template-areas:"side main";gap:36px;padding-block:28px 60px}
+.layout > main{grid-area:main;padding-block:0;align-content:start}
+.layout > .sidebar{grid-area:side;min-width:0;align-self:start;position:sticky;top:16px;max-height:calc(100vh - 32px);overflow-y:auto;padding-right:4px}
+.sidebar h2{font-size:24px}
+.featured{display:grid;gap:6px;background:var(--navy);color:var(--navy-ink);text-decoration:none;border-radius:8px;padding:16px 18px;margin-bottom:24px;border-top:4px solid var(--red)}
+.featured .wl{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;opacity:.75}
+.featured .ft{font-family:var(--f-display);font-weight:800;font-size:26px;line-height:1.05;text-transform:uppercase;text-wrap:balance}
+.featured .fs{font-size:14px;opacity:.88}
+.featured .fr{font-weight:600;font-size:14px;margin-top:4px}
+.featured:hover .fr{text-decoration:underline}
+.newslist{list-style:none;margin:0;padding:0;display:grid}
+.newslist li{display:grid;gap:4px;padding:10px 0;border-bottom:1px solid var(--line)}
+.newslist li:first-child{padding-top:0}
+.newslist a{color:var(--ink);text-decoration:none;font-weight:600;font-size:15px;line-height:1.3}
+.newslist a:hover{color:var(--blue);text-decoration:underline}
+@media (max-width:900px){
+  .layout{grid-template-columns:minmax(0,1fr);grid-template-areas:"main" "side"}
+  .layout > .sidebar{position:static;max-height:none;overflow:visible;padding-right:0}
+}
+
+.layout th,.layout td{padding:10px 8px}
+.layout .total{min-width:150px}
+.layout .bar{min-width:60px}
 
 /* Article */
 article.post{max-width:72ch}
