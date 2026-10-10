@@ -81,9 +81,9 @@ window.ECAA_RANKING = {
     },
     {
       id: "acha2", name: "ACHA Division 2", country: "USA", cat: "world",
-      teams: 200, pop: 340.1, games: 25, live: 4, avg: 200, max: 875, est: ["teams", "games", "avg", "max"],
-      note: "Estimates from a sample of game reports. The real maximum is likely higher (Georgia home games, Savannah Hockey Classic) but no figure was found.",
-      src: ["https://www.eliteprospects.com/league/acha-ii/2025-2026", "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=acha&game_id=28800&lang_id=1"]
+      teams: 200, pop: 340.1, games: 25, live: 4, avg: 200, max: 6588, est: ["teams", "games", "avg"],
+      note: "Average estimated from a sample of game reports (most leave attendance blank). Maximum: 6,588, Michigan State v Michigan Tech (both MD2), Munn Ice Arena, East Lansing, 26 September 2025, per the official game report (the figure is close to the arena's capacity). Other big crowds per game reports: 6,285 Michigan State v Indiana Tech (Munn), 2,200 Utah State v Weber State (Eccles Ice Center), 1,700 Montana v Montana State.",
+      src: ["https://www.eliteprospects.com/league/acha-ii/2025-2026", "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=acha&game_id=27977&lang_id=1", "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=acha&game_id=29515&lang_id=1"]
     },
     {
       id: "acha3", name: "ACHA Division 3", country: "USA", cat: "world",
