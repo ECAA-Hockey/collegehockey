@@ -28,7 +28,7 @@ window.ECAA_RANKING = {
     {
       id: "fcaa", name: "FCAA", country: "Finland", cat: "eu",
       teams: 25, pop: 5.6, games: 7, live: 5, avg: 577, max: 2031, est: [],
-      note: "25 teams, 7 regular-season games per team before the final playoff tournament; live statistics 5/5; average attendance 577 (all as reported by ECAA, 10 October 2026). Season record: 2,031 spectators at the Parru Fights Cancer games, Kisapuisto ice hall, Lappeenranta, autumn 2025 (two games on one bill, as reported by Jatkoaika). Final: HC Lumikot v Parru HT Red, Vantaa, April 2026.",
+      note: "25 teams in the main (open) series; the separate women's series is not counted. 7 regular-season games per team before the final playoff tournament; live statistics 5/5; average attendance 577 (all as reported by ECAA, 10 October 2026). Season record: 2,031 spectators at the Parru Fights Cancer games, Kisapuisto ice hall, Lappeenranta, autumn 2025 (two games on one bill, as reported by Jatkoaika). Final: HC Lumikot v Parru HT Red, Vantaa, April 2026.",
       src: ["https://www.gameresultsonline.com/fcaa/fcaa-2024-2025/pages/what-is-fcaa?lang=en_US", "https://www.jatkoaika.com/Artikkeli/FCAAn-kolmas-kausi-alkoi-%E2%88%92-yleis%C3%B6enn%C3%A4tys-rikki-Lappeenrannassa/266898", "https://www.jatkoaika.com/Artikkeli/FCAA-finaalissa-oli-sekavat-tuplajuhlat-%E2%80%93-mestaruusjuhlat-alkoivat-ensi-kerran-jo-toisen-er%C3%A4n-j%C3%A4lkeen/269038"]
     },
     {
@@ -75,9 +75,9 @@ window.ECAA_RANKING = {
     },
     {
       id: "acha1", name: "ACHA Division 1", country: "USA", cat: "world",
-      teams: 72, pop: 340.1, games: 31, live: 4, avg: 300, max: 1547, est: ["teams", "avg", "max"],
-      note: "The ACHA does not publish attendance; average and maximum from a sample of official HockeyTech game reports that list it. Maximum: Northern Illinois v Iowa State, Allstate Arena, 6 December 2025.",
-      src: ["https://www.eliteprospects.com/league/acha/2025-2026", "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=acha&game_id=26000&lang_id=1"]
+      teams: 72, pop: 340.1, games: 31, live: 4, avg: 300, max: 6302, est: ["teams", "avg"],
+      note: "The ACHA does not publish attendance; average and maximum from a sample of official HockeyTech game reports that list it. Maximum: 6,302, NC State 7–0 North Carolina (Governor's Cup), Lenovo Center, Raleigh, 23 November 2025, per the official game report. Other big crowds: more than 4,000 at Liberty v Minot State (press figure), 2,227 at NC State v Alabama outdoors at Truist Field, Charlotte.",
+      src: ["https://www.eliteprospects.com/league/acha/2025-2026", "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=acha&game_id=30963&lang_id=1"]
     },
     {
       id: "acha2", name: "ACHA Division 2", country: "USA", cat: "world",
