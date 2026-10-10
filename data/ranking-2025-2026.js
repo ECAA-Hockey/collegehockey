@@ -1,7 +1,7 @@
 // ECAA College Hockey Ranking – season 2025/2026 data.
 // est  = keys whose value is an estimate (marked ≈ on the site).
 // null = the league does not publish the figure (0 points for that criterion).
-// tpmTeams = teams counted for teams-per-million when it differs from the league's own teams (USA: all 566 US college teams in NCAA D1, D3 and ACHA D1–D3; U SPORTS: all 47 Canadian college teams).
+// tpmTeams = teams counted for teams-per-million when it differs from the league's own teams (USA: all 576 US college teams in NCAA D1, D3 and ACHA D1–D3; U SPORTS: all 47 Canadian college teams).
 // pop  = population in millions (country; ACAC and BCIHL use their province; EUHL the average of its participating countries).
 window.ECAA_RANKING = {
   season: "2025/2026",
@@ -46,13 +46,13 @@ window.ECAA_RANKING = {
     },
     {
       id: "ncaa", name: "NCAA Division I", country: "USA", cat: "world",
-      teams: 63, pop: 340.1, tpmTeams: 566, games: 34, live: 5, avg: 3571, max: 74575, est: ["teams"],
+      teams: 63, pop: 340.1, tpmTeams: 576, games: 34, live: 5, avg: 3571, max: 74575, est: [],
       note: "Maximum: Penn State v Michigan State, outdoors at Beaver Stadium, 31 January 2026 (74,575). Average: 3,571 (3,889,143 spectators over 1,089 home games of 63 teams, USCHO attendance table 2025/2026).",
       src: ["https://en.wikipedia.org/wiki/2025%E2%80%9326_NCAA_Division_I_men%27s_ice_hockey_season", "https://gopsusports.com/news/2026/01/31/no-5-mens-hockey-falls-to-no-2-michigan-state-5-4-in-ot-thriller-at-beaver-stadium", "https://www.uscho.com/stats/attendance/division-i-men/2025-2026"]
     },
     {
       id: "ncaa3", name: "NCAA Division III", country: "USA", cat: "world",
-      teams: 91, pop: 340.1, tpmTeams: 566, games: 25, live: 5, avg: 395, max: 3837, est: ["teams"],
+      teams: 91, pop: 340.1, tpmTeams: 576, games: 25, live: 5, avg: 395, max: 3837, est: [],
       note: "Average: 395 (457,451 spectators over 1,159 home games of 91 teams, USCHO attendance table 2025/2026; Utica leads with 3,016 per game). Maximum: national final Hamilton v Hobart, Utica, 29 March 2026.",
       src: ["https://en.wikipedia.org/wiki/2025%E2%80%9326_NCAA_Division_III_men%27s_ice_hockey_season", "https://en.wikipedia.org/wiki/2026_NCAA_Division_III_men%27s_ice_hockey_tournament", "https://www.uscho.com/stats/attendance/division-iii-men/2025-2026"]
     },
@@ -76,19 +76,19 @@ window.ECAA_RANKING = {
     },
     {
       id: "acha1", name: "ACHA Division 1", country: "USA", cat: "world",
-      teams: 72, pop: 340.1, tpmTeams: 566, games: 31, live: 4, avg: 453, max: 6302, est: ["teams", "avg"],
+      teams: 84, pop: 340.1, tpmTeams: 576, games: 31, live: 4, avg: 453, max: 6302, est: ["avg"],
       note: "Average = mean of the 423 MD1-v-MD1 games with attendance entered in the official ACHA/HockeyTech data (median 300); most games leave it blank. Maximum: 6,302, NC State 7–0 North Carolina (Governor's Cup), Lenovo Center, Raleigh, 23 November 2025, per the official game report. Other big crowds: more than 4,000 at Liberty v Minot State (press figure), 2,227 at NC State v Alabama outdoors at Truist Field, Charlotte.",
       src: ["https://www.eliteprospects.com/league/acha/2025-2026", "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=acha&game_id=30963&lang_id=1"]
     },
     {
       id: "acha2", name: "ACHA Division 2", country: "USA", cat: "world",
-      teams: 200, pop: 340.1, tpmTeams: 566, games: 25, live: 4, avg: 335, max: 6588, est: ["teams", "games", "avg"],
+      teams: 196, pop: 340.1, tpmTeams: 576, games: 25, live: 4, avg: 335, max: 6588, est: ["games", "avg"],
       note: "Average = mean of the 528 MD2-v-MD2 games with attendance entered in the official ACHA/HockeyTech data (median 174); most games leave it blank. Maximum: 6,588, Michigan State v Michigan Tech (both MD2), Munn Ice Arena, East Lansing, 26 September 2025, per the official game report (the figure is close to the arena's capacity). Other big crowds per game reports: 6,285 Michigan State v Indiana Tech (Munn), 2,200 Utah State v Weber State (Eccles Ice Center), 1,700 Montana v Montana State.",
       src: ["https://www.eliteprospects.com/league/acha-ii/2025-2026", "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=acha&game_id=27977&lang_id=1", "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=acha&game_id=29515&lang_id=1"]
     },
     {
       id: "acha3", name: "ACHA Division 3", country: "USA", cat: "world",
-      teams: 140, pop: 340.1, tpmTeams: 566, games: 22, live: 4, avg: 225, max: 1308, est: ["teams", "games", "avg"],
+      teams: 142, pop: 340.1, tpmTeams: 576, games: 22, live: 4, avg: 225, max: 1308, est: ["games", "avg"],
       note: "Average = mean of the 325 MD3-v-MD3 games with attendance entered in the official ACHA/HockeyTech data (median 150); most games leave it blank. Maximum: 1,308, Colorado Mesa v UCCS, River City Sportsplex, Grand Junction, 17 October 2025, per the official game report.",
       src: ["https://www.eliteprospects.com/league/acha-iii/2025-2026", "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=acha&game_id=27633&lang_id=1"]
     },
