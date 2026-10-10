@@ -581,7 +581,7 @@ window.ECAA_NEWS = [
     "original": null,
     "source": "Energeticcity.ca",
     "url": "https://energeticcity.ca/2026/03/10/former-huskies-celebrate-canadian-collegiate-hockey-supremacy/",
-    "summary": "VIU beat UVic 3–2 in the final on 6 March."
+    "summary": "VIU beat UVic in the BCIHL final to win the championship."
   },
   {
     "date": "2026-03-04",

@@ -69,9 +69,9 @@ window.ECAA_RANKING = {
     },
     {
       id: "bcihl", name: "BCIHL", country: "Canada (British Columbia)", cat: "world",
-      teams: 5, pop: 5.7, games: 20, live: 4, avg: 160, max: null, est: ["live", "avg"],
-      note: "Average per the Logan Lake coach (about 160 at home, 2024/2025). Maximum not published; final VIU v UVic, 6 March 2026.",
-      src: ["https://www.eliteprospects.com/league/bcihl/2025-2026", "https://cfjctoday.com/2025/01/22/beleaguered-logan-lake-miners-digging-out-of-bcihl-pit/"]
+      teams: 5, pop: 5.7, games: 20, live: 4, avg: 160, max: 407, est: ["live", "avg", "max"],
+      note: "Average per the Logan Lake coach (about 160 at home, 2024/2025). Maximum: 407 spectators, SFU v UVic (5–1), Queen's Park Arena, New Westminster, 8 November 2025, the only published figure of the season (highest documented, not a confirmed record). The final, VIU v UVic at Queen's Park Arena in March 2026, has no published attendance.",
+      src: ["https://www.eliteprospects.com/league/bcihl/2025-2026", "https://cfjctoday.com/2025/01/22/beleaguered-logan-lake-miners-digging-out-of-bcihl-pit/", "https://sfuhockey.com/news/red-leafs-win-x2-postgame-report---sfu-tops-uaf-ncaa-d1-bcihl-team-tops-undefeated-uvic-at-queens-park-arena"]
     },
     {
       id: "acha1", name: "ACHA Division 1", country: "USA", cat: "world",
@@ -94,13 +94,13 @@ window.ECAA_RANKING = {
     {
       id: "jp", name: "JP-UNIV", country: "Japan", cat: "world",
       teams: 8, pop: 123.4, games: 15, live: 4, avg: null, max: null, est: ["live"],
-      note: "Kanto University League, Division I-A (8 teams; 7 + 5 + 3 games). Score sheets have an attendance field but leave it blank. Goal-by-goal results service; not confirmed to update live.",
+      note: "Kanto University League, Division I-A (8 teams; 7 + 5 + 3 games). Score sheets have an attendance field but leave it blank (checked for 2025/2026, including the final-league games); no crowd figure is published elsewhere. Goal-by-goal results service; not confirmed to update live.",
       src: ["https://www.eliteprospects.com/league/jp-univ/2025-2026", "https://tihf.jp/?ctg=19&cnt=175550485287180600", "https://tihf.jp/doc?did=176026069686238900"]
     },
     {
       id: "kor", name: "Korea-Univ", country: "South Korea", cat: "world",
       teams: 4, pop: 51.7, games: 6, live: 4, avg: null, max: null, est: ["live"],
-      note: "KUSF U-League: Yonsei, Korea University, Kwangwoon, Kyung Hee. Attendance is not published. The Korea–Yonsei rivalry game (19 September 2025) is not a league game.",
+      note: "KUSF U-League: Yonsei, Korea University, Kwangwoon, Kyung Hee. Attendance is not published, including the final Yonsei v Korea University (4–2), Mokdong Ice Rink, 14 November 2025. The Korea–Yonsei rivalry game (19 September 2025) is not a league game.",
       src: ["https://www.eliteprospects.com/league/korea-college/2025-2026", "https://kusf.or.kr/league/league_ranking.html?e_code=33"]
     }
   ]
