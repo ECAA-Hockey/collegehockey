@@ -37,10 +37,10 @@ window.ECAA_RANKING = {
       "pop": 5.4,
       "games": 12,
       "live": 4,
-      "avg": 128,
-      "max": 451,
+      "avg": 150,
+      "max": 1232,
       "est": [],
-      "note": "První ročník pod SZĽH. Průměr spočten ze zápisů na hockeyslovakia.sk (38 z 39 zápasů vč. play-off). Maximum: UMB Banská Bystrica – Trenčín 10. 2. 2026. Play-by-play existuje, nepotvrzeno, že běží živě.",
+      "note": "První ročník pod SZĽH. Průměr 150 a rekord 1 232 diváků podle údajů ligy (opraveno 10. 10. 2026). Play-by-play existuje, nepotvrzeno, že běží živě.",
       "src": [
         "https://www.hockeyslovakia.sk/sk/stats/results/1174/univerzitna-liga",
         "https://www.hockeyslovakia.sk/sk/stats/matches/1174/univerzitna-liga/match/157028"
@@ -99,9 +99,9 @@ window.ECAA_RANKING = {
       "games": 7,
       "live": 5,
       "avg": 262,
-      "max": 620,
+      "max": 642,
       "est": [],
-      "note": "Oficiální zápisy svazu na stats.swehockey.se se všemi diváky (8 369 / 32 zápasů). Live stream na SvenskHockey.tv. Maximum: LTH Griparna – Uppsala 7. 2. 2026.",
+      "note": "Oficiální zápisy svazu na stats.swehockey.se se všemi diváky (8 369 / 32 zápasů). Live stream na SvenskHockey.tv. Rekord sezóny 642 diváků podle údajů ligy (opraveno 10. 10. 2026).",
       "src": [
         "https://stats.swehockey.se/ScheduleAndResults/Overview/19313",
         "https://studenthockey.se/suhl-slutspel-2026/"
