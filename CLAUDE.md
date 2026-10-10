@@ -58,3 +58,5 @@ Pět kritérií, každé 20 %:
 ## Nasazení
 
 GitHub Pages: repozitář ECAA-Hockey/collegehockey, větev `main`, kořen repozitáře, doména collegehockey.eu (soubor `CNAME`). Každý push do `main` se do pár minut zveřejní.
+
+- Po každé změně CSS/JS/dat zvýšit `?v=…` v odkazech v HTML (cache prohlížečů).
