@@ -31,7 +31,7 @@ Pět kritérií; váhy: `games`, `live`, `avg`, `max` po 22,5 %, `tpm` 10 % (vá
 
 - „Nejlepší“ = nejlepší liga v daném žebříčku. Europe = ligy s `cat: "eu"`, World = všechny ligy včetně evropských.
 - `null` = liga údaj nezveřejňuje → 0 bodů. `est` = klíče, které jsou odhad (na webu ≈).
-- `pop` = obyvatelé země v milionech; ACAC = Alberta, BCIHL = Britská Kolumbie, EUHL = součet zúčastněných zemí.
+- `pop` = obyvatelé země v milionech; ACAC = Alberta, BCIHL = Britská Kolumbie, EUHL = průměr zúčastněných zemí (součet obyvatel ÷ počet zemí).
 - Jen mužské soutěže. Zápasy mimo ligu (např. Varsity u BUIHA) se nezapočítávají.
 - Live statistiky: 0 nic, 1 výsledky, 2 střelci a asistence, 3 box score, 4 sezónní statistiky, 5 live play-by-play.
 - Název žebříčku je **College Hockey Ranking**. V textech webu se používá „Leader“, ne „Winner“. Sezóna se píše `2025/2026`.

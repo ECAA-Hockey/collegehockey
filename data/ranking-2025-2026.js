@@ -1,7 +1,7 @@
 // ECAA College Hockey Ranking – season 2025/2026 data.
 // est  = keys whose value is an estimate (marked ≈ on the site).
 // null = the league does not publish the figure (0 points for that criterion).
-// pop  = population in millions (country; ACAC and BCIHL use their province; EUHL the sum of participating countries).
+// pop  = population in millions (country; ACAC and BCIHL use their province; EUHL the average of its participating countries).
 window.ECAA_RANKING = {
   season: "2025/2026",
   published: "2026-10-10",
@@ -21,8 +21,8 @@ window.ECAA_RANKING = {
     },
     {
       id: "euhl", name: "EUHL", country: "Hungary, Poland, Romania", cat: "eu",
-      teams: 5, pop: 65.2, games: 8, live: 4, avg: 157, max: 299, est: ["avg", "max"],
-      note: "Five teams: UNI Győr ETO, DEAC II, Sapientia U23, UHT Sabres Oświęcim, Opole United; no Czech or Slovak team in 2025/2026. Attendance based on the only three box scores that list it.",
+      teams: 5, pop: 21.7, games: 8, live: 4, avg: 157, max: 299, est: ["avg", "max"],
+      note: "Five teams: UNI Győr ETO, DEAC II, Sapientia U23, UHT Sabres Oświęcim, Opole United; no Czech or Slovak team in 2025/2026. Population = average of the three participating countries (Poland, Romania, Hungary: 65.2 M ÷ 3 = 21.7 M). Attendance based on the only three box scores that list it.",
       src: ["https://euhl.eu/stranka/schedule", "https://www.eliteprospects.com/league/euhl/2025-2026", "https://euhl.eu/zapas/babf2337-db17-442f-858d-f6fe4d6ea7dc"]
     },
     {
