@@ -42,6 +42,7 @@ Pět kritérií, každé 20 %:
 - Položka: `date` (YYYY-MM-DD), `league` (klíč z `ECAA_LEAGUES`), `title` (anglický titulek), `original` (titulek v originále, nebo `null`), `source`, `url` (skutečná URL článku, nikdy nevymýšlet), `summary` (jedna anglická věta).
 - Pole je seřazené od nejnovějšího. Zvýrazněný článek nahoře v levém sloupci má `pinned: true` (vždy jen jeden; nový ročník žebříčku = přesunout `pinned` na nový článek). Články ECAA mají `league: "ecaa"` a `url` relativní ke kořeni webu (`news/…html`).
 - Liga ACHA je ve feedu jedna (`acha`) pro všechny tři divize.
+- **Z EUHL se žádné zprávy nedávají** (EUHL není v `ECAA_LEAGUES`; v žebříčku zůstává).
 
 ## Rekordy návštěvnosti (index.html)
 

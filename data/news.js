@@ -14,10 +14,6 @@ window.ECAA_LEAGUES = {
     "name": "Univerzitná liga",
     "country": "Slovakia"
   },
-  "euhl": {
-    "name": "EUHL",
-    "country": "Central Europe"
-  },
   "fcaa": {
     "name": "FCAA",
     "country": "Finland"
@@ -129,24 +125,6 @@ window.ECAA_NEWS = [
     "summary": "Yonsei beat Korea University 2–1 in ice hockey, though Korea took the overall games 3–2."
   },
   {
-    "date": "2026-10-01",
-    "league": "euhl",
-    "title": "UNI Győr ETO HC opens the new EUHL season on home ice",
-    "original": null,
-    "source": "EUHL",
-    "url": "https://euhl.eu/clanok/uni-gyor-eto-hc-opens-the-new-euhl-season-on-home-ice",
-    "summary": "Last season's regular-season leaders open 2026/2027 with a home tournament in Győr on 14–16 October."
-  },
-  {
-    "date": "2026-09-29",
-    "league": "euhl",
-    "title": "Sekeráš Trophy returns to the EUHL office",
-    "original": null,
-    "source": "EUHL",
-    "url": "https://euhl.eu/clanok/sekeras-trophy-returns-to-the-euhl-office",
-    "summary": "The championship trophy is back at the league office and will be awarded again at the 2026/2027 final tournament."
-  },
-  {
     "date": "2026-09-29",
     "league": "kor",
     "title": "Korea–Yonsei games mark 61st year",
@@ -247,15 +225,6 @@ window.ECAA_NEWS = [
   },
   {
     "date": "2026-08-20",
-    "league": "euhl",
-    "title": "EUHL 2025/2026: a season that brought universities and countries together",
-    "original": null,
-    "source": "EUHL",
-    "url": "https://euhl.eu/clanok/euhl-20252026-a-season-that-brought-universities-countries-and-great-hockey-stories-together",
-    "summary": "The EUHL published a review of its 2025/2026 season."
-  },
-  {
-    "date": "2026-08-20",
     "league": "bcihl",
     "title": "SFU announces 2026/27 BCIHL leadership group",
     "original": null,
@@ -334,15 +303,6 @@ window.ECAA_NEWS = [
     "source": "SFU Hockey",
     "url": "https://sfuhockey.com/news/recruits-former-surrey-eagle-alex-sandhu-commits-to-sfu-bcihl-squad",
     "summary": "The forward joins SFU for the 2026/2027 BCIHL season."
-  },
-  {
-    "date": "2026-07-17",
-    "league": "euhl",
-    "title": "EUHL expansion discussed in Győr",
-    "original": null,
-    "source": "EUHL",
-    "url": "https://euhl.eu/clanok/euhl-expansion-discussed-in-gyor",
-    "summary": "League representatives met in Győr to discuss expanding the EUHL."
   },
   {
     "date": "2026-07-08",
@@ -445,15 +405,6 @@ window.ECAA_NEWS = [
   },
   {
     "date": "2026-05-06",
-    "league": "euhl",
-    "title": "Sabers Oświęcim are European university hockey champions",
-    "original": "Sabers Oświęcim mistrzami Europy w hokeju akademickim",
-    "source": "OświęcimOnline",
-    "url": "https://www.oswiecimonline.pl/sabers-oswiecim-mistrzami-europy-w-hokeju-akademickim-wicemarszalkowie-malopolski-pogratulowali-szablom/",
-    "summary": "Sabers won the 2025/2026 EUHL final tournament in Trenčín undefeated and were congratulated by regional officials."
-  },
-  {
-    "date": "2026-05-06",
     "league": "acha",
     "title": "Sacred Heart to join ACHA Men's Division 1",
     "original": null,
@@ -478,15 +429,6 @@ window.ECAA_NEWS = [
     "source": "SUHF",
     "url": "https://studenthockey.se/kallesle-till-suhf-arsmote-2026/",
     "summary": "SUHF invited its members to the online annual meeting on 19 May."
-  },
-  {
-    "date": "2026-04-27",
-    "league": "euhl",
-    "title": "Sekeráš Trophy 2026 moves to Oświęcim, Poland",
-    "original": null,
-    "source": "EUHL",
-    "url": "https://euhl.eu/clanok/sekeras-trophy-2026-oswiecim-poland",
-    "summary": "UHT Sabers Oświęcim won the Sekeráš Trophy at the EUHL final tournament."
   },
   {
     "date": "2026-04-20",
@@ -597,15 +539,6 @@ window.ECAA_NEWS = [
     "summary": "HK UMB Banská Bystrica and Gladiators Trenčín opened the first Univerzitná liga final, a best-of-five series."
   },
   {
-    "date": "2026-03-24",
-    "league": "euhl",
-    "title": "Szekler Cup: Sapientia U23 triumphs",
-    "original": null,
-    "source": "EUHL",
-    "url": "https://euhl.eu/clanok/szekler-cup-2024-sapientia-u23-triumphs-in-a-celebration-of-university-hockey",
-    "summary": "Sapientia U23 won the EUHL Szekler Cup, beating DEAC 3–2 in overtime in the final."
-  },
-  {
     "date": "2026-03-23",
     "league": "suhl",
     "title": "SUHF annual meeting and call for 2026/2027 participants",
@@ -685,15 +618,6 @@ window.ECAA_NEWS = [
     "source": "SUHF",
     "url": "https://studenthockey.se/topp-4-klara-for-slutspel-i-student-sm/",
     "summary": "Four teams qualified for the Swedish university championship weekend in Uppsala on 20–21 February."
-  },
-  {
-    "date": "2026-02-10",
-    "league": "euhl",
-    "title": "University of Győr Hockey Cup brings victory for Lehel HC Jászberény",
-    "original": null,
-    "source": "EUHL",
-    "url": "https://euhl.eu/clanok/university-of-gyor-hockey-cup-brought-thrilling-matches-and-victory-for-lehel-hc-jaszbereny",
-    "summary": "Lehel HC Jászberény won the Győr tournament ahead of UNI Győr ETO HC, Sapientia U23 and Opole United."
   },
   {
     "date": "2026-02-10",
@@ -784,15 +708,6 @@ window.ECAA_NEWS = [
     "source": "Penn State Athletics",
     "url": "https://gopsusports.com/news/2026/01/31/no-5-mens-hockey-falls-to-no-2-michigan-state-5-4-in-ot-thriller-at-beaver-stadium",
     "summary": "74,575 fans watched No. 2 Michigan State win outdoors at Beaver Stadium, the second-largest crowd in college hockey history."
-  },
-  {
-    "date": "2026-01-29",
-    "league": "euhl",
-    "title": "Győr to host the third EUHL series tournament",
-    "original": null,
-    "source": "EUHL",
-    "url": "https://euhl.eu/clanok/gyor-to-host-the-third-euhl-series-tournament-university-hockey-unites-central-europe",
-    "summary": "Four university teams play a round-robin event in Győr, Hungary, on 5–7 February 2026."
   },
   {
     "date": "2026-01-27",
