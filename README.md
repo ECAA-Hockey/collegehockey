@@ -1,9 +1,9 @@
-# ECAA University Hockey Ranking 2025/26
+# collegehockey.eu
 
-Oficiální žebříček univerzitních hokejových soutěží mužů ECAA, kategorie Evropa a Svět.
+Website of ECAA – European College Athletics Association.
 
-- Otevřete `index.html` v prohlížeči pro náhled.
-- Web běží na GitHub Pages na doméně collegehockey.eu (soubor `CNAME`). Každý push do větve `main` se automaticky zveřejní.
-- Data sezóny jsou v `data/2025-26.js`, metodika a postup pro další ročník v `CLAUDE.md`.
+- **University Hockey Ranking 2025/2026** – the annual ranking of men's university ice hockey competitions (Europe and World). Leaders: ULLH (Europe, 84.9) and NCAA Division I (World, 80.8).
+- **Attendance records** – world and European records for university hockey.
+- **News** – one article per league per month, plus ECAA announcements.
 
-Vítězové 2025/26: **ULLH** (Evropa, 84,9 bodu), **NCAA Division I** (Svět, 80,8 bodu).
+Static site (HTML, CSS, vanilla JS), deployed with GitHub Pages. Open `index.html` locally for a preview. Data lives in `data/`; editing notes (in Czech) are in `CLAUDE.md`.

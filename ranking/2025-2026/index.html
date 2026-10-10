@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ECAA University Hockey Ranking 2025/2026</title>
+<meta name="description" content="Official ECAA ranking of men's university ice hockey competitions for the 2025/2026 season. Leaders: ULLH (Europe) and NCAA Division I (World).">
+<meta property="og:title" content="ECAA University Hockey Ranking 2025/2026">
+<meta property="og:description" content="Official ECAA ranking of men's university ice hockey competitions for the 2025/2026 season. Leaders: ULLH (Europe) and NCAA Division I (World).">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ECAA – European College Athletics Association">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body>
+<header class="board">
+  <div class="wrap">
+    <div class="topbar">
+      <a class="brand" href="../../"><b>ECAA</b><span>European College Athletics Association</span></a>
+      <nav class="main" aria-label="Main"><a href="../../">Home</a><a href="../../ranking/2025-2026/" aria-current="page">Ranking 2025/2026</a><a href="../../news/">News</a></nav>
+    </div>
+    <div class="hero">
+      <div class="eyebrow">Season 2025/2026 · Published 10 October 2026</div>
+      <h1>University Hockey Ranking <span class="season">2025/2026</span></h1>
+      <p class="lede">The official ECAA ranking of men's university ice hockey competitions for the 2025/2026 season. The Europe ranking includes European competitions only; the World ranking includes all competitions, European ones too.</p>
+      <div class="tabs" role="tablist">
+        <button class="tab" role="tab" id="tab-eu" aria-selected="true" data-cat="eu">Europe</button>
+        <button class="tab" role="tab" id="tab-world" aria-selected="false" data-cat="world">World</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section aria-label="Leaders">
+    <div class="leaders">
+      <div class="leader" id="leaderEu"><div class="wl">Leader · Europe</div><div class="wn"></div><div class="ws"></div><ol start="2"></ol></div>
+      <div class="leader" id="leaderWorld"><div class="wl">Leader · World</div><div class="wn"></div><div class="ws"></div><ol start="2"></ol></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 id="rankTitle">Europe</h2>
+    <div class="scroll"><table id="rankTable" aria-describedby="rankTitle"></table></div>
+    <p class="foot">Each column shows points (0–100) and the underlying value. Values marked <span class="est">≈</span> are estimates from public sources. “Not published” means the league does not publish the figure and scores 0 for that criterion. Data as of 10 October 2026.</p>
+  </section>
+
+  <section>
+    <h2>Methodology</h2>
+    <div class="method">
+      <div>
+        <ul class="crit">
+          <li>Regular-season games per team <b>20 %</b></li>
+          <li>Live statistics quality (0–5) <b>20 %</b></li>
+          <li>Average league attendance <b>20 %</b></li>
+          <li>Highest attendance at a single game <b>20 %</b></li>
+          <li>Teams per 1 million inhabitants <b>20 %</b></li>
+        </ul>
+      </div>
+      <div>
+        <p>Each criterion is converted to 0–100 points. The best competition in the ranking scores 100 and the others a proportional share (value ÷ best value × 100). Attendance uses a logarithmic scale (log of value ÷ log of best value × 100), so a single record crowd does not push every other league towards zero. Live statistics are scored directly: 5 = 100 points.</p>
+        <p>Europe and World are scored separately. Men's competitions only. Highest attendance includes playoff and showcase games of the league; matches outside the league, such as Varsity games, are not counted. Teams are divided by the population of the country; for the provincial leagues ACAC (Alberta) and BCIHL (British Columbia) by the province; for EUHL by the participating countries combined.</p>
+      </div>
+      <div>
+        <ul class="scale">
+          <li><span>0</span>No statistics</li>
+          <li><span>1</span>Final results only</li>
+          <li><span>2</span>Goal scorers and assists</li>
+          <li><span>3</span>Full box score (shots, penalties, goalies)</li>
+          <li><span>4</span>Season player and team statistics</li>
+          <li><span>5</span>Live play-by-play during the game</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Sources and notes</h2>
+    <div class="srcs" id="srcList"></div>
+  </section>
+</main>
+<footer class="wrap">ECAA · European College Athletics Association · collegehockey.eu · The University Hockey Ranking is published once a year after the season ends. League articles link to their original sources.</footer>
+
+<script src="../../data/ranking-2025-2026.js"></script>
+<script src="../../assets/ranking.js"></script>
+</body>
+</html>

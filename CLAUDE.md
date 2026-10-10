@@ -1,42 +1,60 @@
-# ECAA University Hockey Ranking
+# ECAA – collegehockey.eu
 
-Statický web (HTML, CSS, vanilla JS, bez buildu a bez závislostí) s ročním žebříčkem univerzitních hokejových soutěží mužů, který vydává ECAA. Jazyk webu je čeština.
+Statický web ECAA (HTML, CSS, vanilla JS, bez buildu a bez závislostí). Jazyk webu je **angličtina**. Obsahuje roční žebříček univerzitních hokejových soutěží mužů, rekordy návštěvnosti a feed novinek z lig.
 
 ## Struktura
 
-- `index.html` – stránka (hlavička, vítězové, žebříček, metodika, zdroje)
-- `assets/styles.css` – vzhled, barvy jsou tokeny v `:root` (světlý i tmavý režim)
-- `assets/app.js` – výpočet bodů a vykreslení
-- `data/2025-26.js` – data sezóny, nastavuje `window.ECAA_RANKING`
+- `index.html` – úvod: lídři aktuálního žebříčku, rekordy návštěvnosti, posledních 9 novinek
+- `ranking/2025-2026/index.html` – žebříček sezóny 2025/2026 (tabulky Europe/World, metodika, zdroje)
+- `ranking/index.html` – přesměrování na nejnovější ročník
+- `news/index.html` – všechny novinky po měsících s filtrem podle ligy
+- `news/2026-10-10-ecaa-university-hockey-ranking-2025-2026.html` – článek ECAA o zveřejnění žebříčku
+- `assets/styles.css` – vzhled (barvy jako tokeny v `:root`, světlý i tmavý režim)
+- `assets/ranking.js` – výpočet bodů a vykreslení žebříčku a lídrů
+- `assets/news.js` – vykreslení feedu novinek
+- `data/ranking-2025-2026.js` – data sezóny (`window.ECAA_RANKING`)
+- `data/news.js` – ligy (`window.ECAA_LEAGUES`) a novinky (`window.ECAA_NEWS`)
 
-Stránka funguje i otevřená lokálně ze souboru (data jsou v `.js`, ne v `.json`, aby nebyl potřeba server).
+Cesty jsou relativní (`../`, `../../`), takže web funguje i otevřený lokálně ze souboru.
 
-## Metodika (neměnit bez souhlasu ECAA)
+## Metodika žebříčku (neměnit bez souhlasu ECAA)
 
 Pět kritérií, každé 20 %:
 
-| Klíč | Kritérium | Výpočet bodů 0–100 |
+| Klíč | Kritérium | Body 0–100 |
 |---|---|---|
 | `games` | zápasy na tým v základní části | hodnota ÷ nejlepší × 100 |
 | `live` | kvalita live statistik, škála 0–5 | hodnota ÷ 5 × 100 |
 | `avg` | průměrná návštěvnost ligy | log10(1+hodnota) ÷ log10(1+nejlepší) × 100 |
-| `max` | max. návštěvnost na 1 utkání | log10(1+hodnota) ÷ log10(1+nejlepší) × 100 |
+| `max` | max. návštěvnost na 1 utkání ligy | log10(1+hodnota) ÷ log10(1+nejlepší) × 100 |
 | `tpm` | týmy na 1 mil. obyvatel (`teams` ÷ `pop`) | hodnota ÷ nejlepší × 100 |
 
-- „Nejlepší“ = nejlepší liga v daném žebříčku. Evropa = ligy s `cat: "eu"`, Svět = všechny ligy včetně evropských.
-- `null` = liga údaj nezveřejňuje → 0 bodů v kritériu.
-- `est` = seznam klíčů, které jsou odhad; na webu se označí ≈.
-- `pop` = obyvatelé země v milionech; u provinčních lig (ACAC – Alberta, BCIHL – Britská Kolumbie) obyvatelé provincie; u EUHL součet zúčastněných zemí.
-- Jen mužské soutěže. Varsity zápasy mimo ligu (např. Sheffield Varsity u BUIHA) se nezapočítávají.
+- „Nejlepší“ = nejlepší liga v daném žebříčku. Europe = ligy s `cat: "eu"`, World = všechny ligy včetně evropských.
+- `null` = liga údaj nezveřejňuje → 0 bodů. `est` = klíče, které jsou odhad (na webu ≈).
+- `pop` = obyvatelé země v milionech; ACAC = Alberta, BCIHL = Britská Kolumbie, EUHL = součet zúčastněných zemí.
+- Jen mužské soutěže. Zápasy mimo ligu (např. Varsity u BUIHA) se nezapočítávají.
+- Live statistiky: 0 nic, 1 výsledky, 2 střelci a asistence, 3 box score, 4 sezónní statistiky, 5 live play-by-play.
+- V textech webu se používá „Leader“, ne „Winner“. Sezóna se píše `2025/2026`.
 
-Live statistiky: 0 nic, 1 jen výsledky, 2 střelci a asistence, 3 kompletní box score, 4 sezónní hráčské a týmové statistiky, 5 live play-by-play během zápasu.
+## Novinky (data/news.js)
 
-## Nová sezóna
+- **Pravidlo: jeden článek za každou ligu za každý měsíc**, aby byl feed rovnoměrný. Když liga v daném měsíci nic nevydala (letní pauza), měsíc se vynechá.
+- Položka: `date` (YYYY-MM-DD), `league` (klíč z `ECAA_LEAGUES`), `title` (anglický titulek), `original` (titulek v originále, nebo `null`), `source`, `url` (skutečná URL článku, nikdy nevymýšlet), `summary` (jedna anglická věta).
+- Pole je seřazené od nejnovějšího. Články ECAA mají `league: "ecaa"` a `url` relativní ke kořeni webu (`news/…html`).
+- Liga ACHA je ve feedu jedna (`acha`) pro všechny tři divize.
 
-1. Zkopírovat `data/2025-26.js` na `data/2026-27.js` a aktualizovat hodnoty, `season`, `published`, `dataAsOf`, poznámky (`note`) a zdroje (`src`).
-2. V `index.html` přepnout `<script src="data/…">` na nový soubor a upravit `<title>`, meta popis a rok v nadpisu (nadpis se jinak bere z `season`).
-3. Starý ročník ponechat jako archiv (případně `archiv/2025-26/`).
+## Rekordy návštěvnosti (index.html)
+
+- World: 104 173, Michigan v Michigan State, Michigan Stadium, Ann Arbor, 11. 12. 2010.
+- Europe: 10 000, VŠB-TUO v OSU (1:3), ULLH, Mustang Aréna, Ostrava, 8. 10. 2026 (předchozí 9 319, Bitva o Prahu, říjen 2025).
+
+## Nový ročník žebříčku (jednou ročně po sezóně)
+
+1. Zkopírovat `data/ranking-2025-2026.js` → `data/ranking-2026-2027.js`, aktualizovat hodnoty, `season`, `published`, `dataAsOf`, `note`, `src`.
+2. Zkopírovat `ranking/2025-2026/` → `ranking/2026-2027/`, upravit cestu k datům, titulky a datum zveřejnění. Starý ročník zůstává jako archiv.
+3. `ranking/index.html` přesměrovat na nový ročník, na `index.html` přepnout data a odkazy a v navigaci odkaz „Ranking“.
+4. Napsat článek ECAA o zveřejnění (`news/YYYY-MM-DD-ecaa-university-hockey-ranking-RRRR-RRRR.html` podle vzoru) a přidat ho do `data/news.js`.
 
 ## Nasazení
 
-Web běží na GitHub Pages (repozitář ECAA-Hockey/collegehockey, větev `main`, kořen repozitáře) na doméně collegehockey.eu (soubor `CNAME`). Každý push do `main` se do pár minut zveřejní. Až bude mít ECAA vlastní úvodní stránku, přesunout žebříček do `ranking/` a odkazy upravit (cesty jsou relativní).
+GitHub Pages: repozitář ECAA-Hockey/collegehockey, větev `main`, kořen repozitáře, doména collegehockey.eu (soubor `CNAME`). Každý push do `main` se do pár minut zveřejní.
