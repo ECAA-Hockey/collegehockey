@@ -31,6 +31,7 @@ Pět kritérií; váhy: `games`, `live`, `avg`, `max` po 22,5 %, `tpm` 10 % (vá
 
 - „Nejlepší“ = nejlepší liga v daném žebříčku. Europe = ligy s `cat: "eu"`, World = všechny ligy včetně evropských.
 - `null` = liga údaj nezveřejňuje → 0 bodů. `est` = klíče, které jsou odhad (na webu ≈).
+- `tpmTeams` = počet týmů pro kritérium týmy/obyv., pokud se liší od `teams`: všech 5 amerických soutěží má celostátní součet 566 týmů (NCAA D1+D3, ACHA D1–3), U SPORTS celokanadský součet 47 (U SPORTS + ACAC + BCIHL). ACAC a BCIHL počítají vlastní týmy na provincii.
 - `pop` = obyvatelé země v milionech; ACAC = Alberta, BCIHL = Britská Kolumbie, EUHL = průměr zúčastněných zemí (součet obyvatel ÷ počet zemí).
 - Jen mužské soutěže. Zápasy mimo ligu (např. Varsity u BUIHA) se nezapočítávají.
 - Live statistiky: 0 nic, 1 výsledky, 2 střelci a asistence, 3 box score, 4 sezónní statistiky, 5 live play-by-play.

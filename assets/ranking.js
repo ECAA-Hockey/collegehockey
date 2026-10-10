@@ -17,7 +17,7 @@
   const nf2 = new Intl.NumberFormat("en-GB", { maximumFractionDigits: 2 });
   const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (m) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[m]));
   const val = (l, k) => {
-    if (k === "tpm") { const t = num(l.teams), p = num(l.pop); return t == null || !p ? null : t / p; }
+    if (k === "tpm") { const t = num(l.tpmTeams ?? l.teams), p = num(l.pop); return t == null || !p ? null : t / p; }
     return num(l[k]);
   };
 
@@ -45,7 +45,7 @@
     const isEst = (l.est || []).includes(k) || (k === "tpm" && (l.est || []).includes("teams"));
     const e = isEst ? '<span class="est" title="Estimate">≈</span>' : "";
     if (k === "live") return e + v + " / 5";
-    if (k === "tpm") return e + nf2.format(v) + ` <span title="${l.teams} teams, ${nf2.format(l.pop)} M population">(${l.teams})</span>`;
+    if (k === "tpm") return e + nf2.format(v) + ` <span title="${l.tpmTeams ?? l.teams} teams, ${nf2.format(l.pop)} M population">(${l.tpmTeams ?? l.teams})</span>`;
     return e + nf.format(v);
   }
 

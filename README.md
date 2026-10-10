@@ -2,7 +2,7 @@
 
 Website of ECAA – European College Athletics Association.
 
-- **College Hockey Ranking 2025/2026** – the annual ranking of men's university ice hockey competitions (Europe and World). Leaders: ULLH (Europe, 92.5) and NCAA Division I (World, 90.4).
+- **College Hockey Ranking 2025/2026** – the annual ranking of men's university ice hockey competitions (Europe and World). Leaders: ULLH (Europe, 92.5) and NCAA Division I (World, 93.7).
 - **Attendance records** – world and European records for university hockey.
 - **News** – one article per league per month, plus ECAA announcements.
 
