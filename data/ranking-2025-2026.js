@@ -75,21 +75,21 @@ window.ECAA_RANKING = {
     },
     {
       id: "acha1", name: "ACHA Division 1", country: "USA", cat: "world",
-      teams: 72, pop: 340.1, games: 31, live: 4, avg: 300, max: 6302, est: ["teams", "avg"],
-      note: "The ACHA does not publish attendance; average and maximum from a sample of official HockeyTech game reports that list it. Maximum: 6,302, NC State 7–0 North Carolina (Governor's Cup), Lenovo Center, Raleigh, 23 November 2025, per the official game report. Other big crowds: more than 4,000 at Liberty v Minot State (press figure), 2,227 at NC State v Alabama outdoors at Truist Field, Charlotte.",
+      teams: 72, pop: 340.1, games: 31, live: 4, avg: 453, max: 6302, est: ["teams", "avg"],
+      note: "Average = mean of the 423 MD1-v-MD1 games with attendance entered in the official ACHA/HockeyTech data (median 300); most games leave it blank. Maximum: 6,302, NC State 7–0 North Carolina (Governor's Cup), Lenovo Center, Raleigh, 23 November 2025, per the official game report. Other big crowds: more than 4,000 at Liberty v Minot State (press figure), 2,227 at NC State v Alabama outdoors at Truist Field, Charlotte.",
       src: ["https://www.eliteprospects.com/league/acha/2025-2026", "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=acha&game_id=30963&lang_id=1"]
     },
     {
       id: "acha2", name: "ACHA Division 2", country: "USA", cat: "world",
-      teams: 200, pop: 340.1, games: 25, live: 4, avg: 200, max: 6588, est: ["teams", "games", "avg"],
-      note: "Average estimated from a sample of game reports (most leave attendance blank). Maximum: 6,588, Michigan State v Michigan Tech (both MD2), Munn Ice Arena, East Lansing, 26 September 2025, per the official game report (the figure is close to the arena's capacity). Other big crowds per game reports: 6,285 Michigan State v Indiana Tech (Munn), 2,200 Utah State v Weber State (Eccles Ice Center), 1,700 Montana v Montana State.",
+      teams: 200, pop: 340.1, games: 25, live: 4, avg: 335, max: 6588, est: ["teams", "games", "avg"],
+      note: "Average = mean of the 528 MD2-v-MD2 games with attendance entered in the official ACHA/HockeyTech data (median 174); most games leave it blank. Maximum: 6,588, Michigan State v Michigan Tech (both MD2), Munn Ice Arena, East Lansing, 26 September 2025, per the official game report (the figure is close to the arena's capacity). Other big crowds per game reports: 6,285 Michigan State v Indiana Tech (Munn), 2,200 Utah State v Weber State (Eccles Ice Center), 1,700 Montana v Montana State.",
       src: ["https://www.eliteprospects.com/league/acha-ii/2025-2026", "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=acha&game_id=27977&lang_id=1", "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=acha&game_id=29515&lang_id=1"]
     },
     {
       id: "acha3", name: "ACHA Division 3", country: "USA", cat: "world",
-      teams: 140, pop: 340.1, games: 22, live: 4, avg: 150, max: 873, est: ["teams", "games", "avg", "max"],
-      note: "Estimates from a sample of game reports. Maximum: Dordt v Creighton, 23 January 2026, the highest found.",
-      src: ["https://www.eliteprospects.com/league/acha-iii/2025-2026", "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=acha&game_id=26500&lang_id=1"]
+      teams: 140, pop: 340.1, games: 22, live: 4, avg: 225, max: 1308, est: ["teams", "games", "avg"],
+      note: "Average = mean of the 325 MD3-v-MD3 games with attendance entered in the official ACHA/HockeyTech data (median 150); most games leave it blank. Maximum: 1,308, Colorado Mesa v UCCS, River City Sportsplex, Grand Junction, 17 October 2025, per the official game report.",
+      src: ["https://www.eliteprospects.com/league/acha-iii/2025-2026", "https://lscluster.hockeytech.com/game_reports/official-game-report.php?client_code=acha&game_id=27633&lang_id=1"]
     },
     {
       id: "jp", name: "JP-UNIV", country: "Japan", cat: "world",
