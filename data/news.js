@@ -61,6 +61,15 @@ window.ECAA_LEAGUES = {
 };
 window.ECAA_NEWS = [
   {
+    "date": "2026-10-14",
+    "league": "ncaa3",
+    "title": "Hamilton tops the 2026-27 USCHO.com Division III preseason poll",
+    "original": null,
+    "source": "Hamilton College Athletics",
+    "url": "https://athletics.hamilton.edu/news/2026/10/14/mens-ice-hockey-mens-hockey-tops-the-2026-27-uscho-com-division-iii-preseason-poll.aspx",
+    "summary": "Reigning NCAA Division III champion Hamilton is No. 1 in the USCHO.com preseason Top 15 with 13 of 20 first-place votes, ahead of Hobart."
+  },
+  {
     "date": "2026-10-10",
     "league": "ecaa",
     "pinned": true,
