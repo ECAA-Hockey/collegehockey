@@ -61,6 +61,33 @@ window.ECAA_LEAGUES = {
 };
 window.ECAA_NEWS = [
   {
+    "date": "2026-11-02",
+    "league": "jp",
+    "title": "Long-awaited first win of the second phase: Hosei shuts out Waseda 6–0",
+    "original": "【アイスホッケー】待望の2ndリーグ初白星！ 早大相手に苦境を跳ね返す完封劇！",
+    "source": "Sports Hosei",
+    "url": "https://sports-hosei.net/97024/",
+    "summary": "Hosei beat Waseda 6–0 on 1 November in Group A of the Kanto University League for its first win of the league's second phase and its first shutout of the season."
+  },
+  {
+    "date": "2026-10-22",
+    "league": "acac",
+    "title": "Ooks men's hockey team bounces back with home opener win against Portage College",
+    "original": null,
+    "source": "The Nugget (NAIT)",
+    "url": "https://thenuggetonline.com/ooks-mens-hockey-team-bounces-back-with-home-opener-win-against-portage-college/",
+    "summary": "The NAIT Ooks beat the Portage College Voyageurs 3–1 in their home opener on 17 October for their first ACAC win of the season, a night after losing 8–7 in a shootout to Portage."
+  },
+  {
+    "date": "2026-10-15",
+    "league": "suhl",
+    "title": "Extraordinary annual meeting called",
+    "original": "Utlysning av tid för extrainsatt årsmöte",
+    "source": "SUHF",
+    "url": "https://studenthockey.se/utlysning-av-tid-for-extrainsatt-arsmote/",
+    "summary": "SUHF, which runs the Swedish University Hockey League, called an extraordinary annual meeting for 24 November 2026."
+  },
+  {
     "date": "2026-10-14",
     "league": "ncaa3",
     "title": "Hamilton tops the 2026-27 USCHO.com Division III preseason poll",
@@ -89,6 +116,15 @@ window.ECAA_NEWS = [
     "summary": "A four-goal second period carried Liberty past Delaware in its Division 1 opener."
   },
   {
+    "date": "2026-10-09",
+    "league": "svk",
+    "title": "UMB wins in Žilina against HC UNIZA in round 2 of the University League",
+    "original": "V 2. kole univerzitnej ligy víťazne v Žiline proti HC UNIZA",
+    "source": "UMB Hockey Team",
+    "url": "https://www.umbhockey.sk/v-2-kole-univerzitnej-ligy-vitazne-v-ziline-proti-hc-uniza/",
+    "summary": "UMB Banská Bystrica beat HC UNIZA Žilina 9–2 away on 6 October in round 2 of the Slovak University League and moved provisionally top of the table."
+  },
+  {
     "date": "2026-10-08",
     "league": "ullh",
     "title": "A record 10,000 spectators saw Ostrava University triumph",
@@ -105,6 +141,15 @@ window.ECAA_NEWS = [
     "source": "Canada West",
     "url": "https://canada-west.prezly.com/mhky-2026-27-season-preview-coaches-poll",
     "summary": "Saskatchewan was picked first, ahead of UBC and Mount Royal."
+  },
+  {
+    "date": "2026-10-08",
+    "league": "bcihl",
+    "title": "WolfPack hockey to return Friday in Logan Lake after 12-year hiatus",
+    "original": null,
+    "source": "CFJC Today",
+    "url": "https://cfjctoday.com/2026/10/08/wolfpack-hockey-to-return-friday-in-logan-lake-after-12-year-hiatus/",
+    "summary": "The TRU WolfPack, formerly the Logan Lake Miners, were set to play their first BCIHL regular-season home game in 12 years on 9 October against the Okanagan Lakers in Logan Lake."
   },
   {
     "date": "2026-10-06",
