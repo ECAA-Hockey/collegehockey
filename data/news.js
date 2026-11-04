@@ -99,7 +99,6 @@ window.ECAA_NEWS = [
   {
     "date": "2026-10-10",
     "league": "ecaa",
-    "pinned": true,
     "title": "ECAA publishes the College Hockey Ranking 2025/2026",
     "original": null,
     "source": "ECAA",
@@ -125,13 +124,14 @@ window.ECAA_NEWS = [
     "summary": "UMB Banská Bystrica beat HC UNIZA Žilina 9–2 away on 6 October in round 2 of the Slovak University League and moved provisionally top of the table."
   },
   {
-    "date": "2026-10-08",
+    "date": "2026-10-09",
     "league": "ullh",
     "title": "A record 10,000 spectators saw Ostrava University triumph",
     "original": "Rekordních 10 tisíc diváků vidělo triumf Ostravské univerzity",
-    "source": "univerzitnihokej.cz",
-    "url": "https://www.univerzitnihokej.cz/clanek/1727-rekordnich-10-tisic-divaku-videlo-triumf-ostravske-univerzity",
-    "summary": "A sold-out crowd of 10,000 at Mustang Aréna watched Ostrava University beat VŠB–Technical University of Ostrava 3:1, a European record for university hockey."
+    "source": "Hokej.cz",
+    "url": "https://www.hokej.cz/rekordnich-10-tisic-divaku-videlo-triumf-ostravske-univerzity/5098446",
+    "summary": "A sold-out crowd of 10,000 at Mustang Aréna watched Ostrava University beat VŠB–Technical University of Ostrava 3:1 in the Ostrava derby on 8 October, a new European record for university sport.",
+    "pinned": true
   },
   {
     "date": "2026-10-08",

@@ -42,11 +42,12 @@
   }
 
   if (pinned) {
-    featBox.innerHTML = `<a class="featured" href="${esc(base + pinned.url)}">
+    const pInt = pinned.league === "ecaa";
+    featBox.innerHTML = `<a class="featured" href="${esc(pInt ? base + pinned.url : pinned.url)}"${pInt ? "" : ' target="_blank" rel="noopener"'}>
       <span class="wl">Featured · ${dfmt.format(d(pinned.date))}</span>
       <span class="ft">${esc(pinned.title)}</span>
       <span class="fs">${esc(pinned.summary)}</span>
-      <span class="fr">Read the announcement →</span></a>`;
+      <span class="fr">${pInt ? "Read the announcement →" : "Read on " + esc(pinned.source) + " ↗"}</span></a>`;
   }
 
   function render() {
