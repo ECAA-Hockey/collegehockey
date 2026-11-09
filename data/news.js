@@ -61,6 +61,33 @@ window.ECAA_LEAGUES = {
 };
 window.ECAA_NEWS = [
   {
+    "date": "2026-11-07",
+    "league": "usports",
+    "title": "Buenaventura's strong season debut leads Cougars to tight win over UBC",
+    "original": null,
+    "source": "Mount Royal Cougars Athletics",
+    "url": "https://mrucougars.com/news/2026/11/7/general-mhky-buenaventuras-strong-season-debut-leads-cougars-to-tight-win-over-ubc.aspx",
+    "summary": "Mount Royal beat UBC 3-1 at Flames Community Arena in Calgary to complete a weekend sweep, with goaltender Ethan Buenaventura making 24 saves in his first start of the season."
+  },
+  {
+    "date": "2026-11-04",
+    "league": "acha",
+    "title": "Drury University No. 1 in ACHA M1 for first time in school history",
+    "original": null,
+    "source": "ACHA",
+    "url": "https://www.achahockey.org/drury-university-no-1-in-acha-m1-for-first-time-in-school-history",
+    "summary": "Drury (10-1-0) rose to No. 1 in the ACHA Men's Division I ranking for the first time in school history after sweeping Minot State 5-4 in overtime and 2-1 in Minot, North Dakota."
+  },
+  {
+    "date": "2026-11-02",
+    "league": "ncaa",
+    "title": "College Hockey Rankings: Ohio State upends Michigan's No. 1 streak",
+    "original": null,
+    "source": "FloHockey",
+    "url": "https://www.flohockey.tv/articles/16346353-college-hockey-rankings-osu-ends-michigans-no-1-streak-nov-2",
+    "summary": "Ohio State's upset ended Michigan's run at No. 1 in the USCHO poll, with Wisconsin taking the top spot on 37 first-place votes."
+  },
+  {
     "date": "2026-11-02",
     "league": "jp",
     "title": "Long-awaited first win of the second phase: Hosei shuts out Waseda 6–0",
