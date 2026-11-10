@@ -63,11 +63,11 @@ window.ECAA_NEWS = [
   {
     "date": "2026-11-10",
     "league": "ecaa",
-    "title": "Marek Herna appointed ECAA Head of Production",
+    "title": "Marek Herna appointed ULLH Head of Production",
     "original": null,
     "source": "ECAA",
     "url": "news/2026-11-10-marek-herna-head-of-production.html",
-    "summary": "Marek Herna will lead entertainment at university hockey games across Europe, aiming to give fans the best experience and help clubs monetise game-day activities.",
+    "summary": "ULLH has appointed Marek Herna, of fan experience agency Go4Gold, as Head of Production, responsible for entertainment in European university hockey.",
     "pinned": true
   },
   {
