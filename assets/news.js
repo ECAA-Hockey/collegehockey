@@ -44,6 +44,7 @@
   if (pinned) {
     const pInt = pinned.league === "ecaa";
     featBox.innerHTML = `<a class="featured" href="${esc(pInt ? base + pinned.url : pinned.url)}"${pInt ? "" : ' target="_blank" rel="noopener"'}>
+      ${pinned.image ? `<img class="fimg" src="${esc((pInt ? base : "") + pinned.image)}" alt="${esc(pinned.imageAlt || "")}" loading="lazy">` : ""}
       <span class="wl">Featured · ${dfmt.format(d(pinned.date))}</span>
       <span class="ft">${esc(pinned.title)}</span>
       <span class="fs">${esc(pinned.summary)}</span>

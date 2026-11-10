@@ -142,6 +142,7 @@ details.src ul{font-size:13px;margin:6px 0 0;padding-left:18px;overflow-wrap:any
 .layout th,.layout td{padding:10px 8px}
 .sidebar h2{font-size:24px}
 .featured{display:grid;gap:8px;background:var(--orange);color:var(--orange-ink);text-decoration:none;padding:18px 18px 16px;margin-bottom:26px}
+.featured .fimg{display:block;width:calc(100% + 36px);margin:-18px -18px 6px;aspect-ratio:4/3;object-fit:cover;object-position:50% 30%;max-width:none}
 .featured .wl{font-family:var(--f-display);font-weight:800;font-size:13px;letter-spacing:.1em;text-transform:uppercase}
 .featured .ft{font-family:var(--f-display);font-weight:900;font-size:30px;line-height:.98;text-transform:uppercase;text-wrap:balance}
 .featured .fs{font-size:14px;font-weight:500}
@@ -160,6 +161,9 @@ details.src ul{font-size:13px;margin:6px 0 0;padding-left:18px;overflow-wrap:any
 }
 
 /* Article */
+.post-photo{margin:22px 0 8px}
+.post-photo img{display:block;width:100%;max-width:520px;height:auto}
+.post-photo figcaption{font-size:13px;color:var(--muted);margin-top:6px;font-weight:600}
 article.post{max-width:72ch}
 article.post h2{font-size:28px;margin-top:30px;border-bottom:3px solid var(--line-strong);padding-bottom:6px}
 article.post p,article.post li{font-size:18px;line-height:1.6}
