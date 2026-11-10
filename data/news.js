@@ -63,6 +63,15 @@ window.ECAA_NEWS = [
   {
     "date": "2026-11-10",
     "league": "ecaa",
+    "title": "Radek Duda: a player who says what he feels",
+    "original": null,
+    "source": "ECAA",
+    "url": "news/2026-11-10-radek-duda-says-what-he-feels.html",
+    "summary": "In a sport full of safe answers, former Sparta and Plzeň forward Radek Duda has never been afraid to say what he really thinks."
+  },
+  {
+    "date": "2026-11-10",
+    "league": "ecaa",
     "title": "Marek Herna appointed ULLH Head of Production",
     "image": "assets/img/news/marek-herna.jpg",
     "imageAlt": "Marek Herna in an ice hockey arena",
