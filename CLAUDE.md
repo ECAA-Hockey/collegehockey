@@ -41,7 +41,7 @@ Pět kritérií; váhy: `games`, `live`, `avg`, `max` po 22,5 %, `tpm` 10 % (vá
 
 - **Pravidlo: jeden článek za každou ligu za každý měsíc**, aby byl feed rovnoměrný. Feed doplňuje plánovaná úloha **každé pondělí** (ECAA league news): lize, která v aktuálním měsíci ještě článek nemá, přidá jeden; v prvním týdnu měsíce dorovná i předchozí měsíc. Když liga v daném měsíci nic nevydala (letní pauza), měsíc se vynechá.
 - Položka: `date` (YYYY-MM-DD), `league` (klíč z `ECAA_LEAGUES`), `title` (anglický titulek), `original` (titulek v originále, nebo `null`), `source`, `url` (skutečná URL článku, nikdy nevymýšlet), `summary` (jedna anglická věta).
-- Pole je seřazené od nejnovějšího. Zvýrazněný článek nahoře v levém sloupci má `pinned: true` (vždy jen jeden; nový ročník žebříčku = přesunout `pinned` na nový článek). Články ECAA mají `league: "ecaa"` a `url` relativní ke kořeni webu (`news/…html`).
+- Pole je seřazené od nejnovějšího. Zvýrazněný článek nahoře v levém sloupci má `pinned: true` (může jich být víc, zobrazí se pod sebou v pořadí pole; nový ročník žebříčku = přesunout `pinned` na nový článek). Články ECAA mají `league: "ecaa"` a `url` relativní ke kořeni webu (`news/…html`).
 - Liga ACHA je ve feedu jedna (`acha`) pro všechny tři divize.
 - **Z EUHL se žádné zprávy nedávají** (EUHL není v `ECAA_LEAGUES`; v žebříčku zůstává).
 

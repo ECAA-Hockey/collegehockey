@@ -1,5 +1,5 @@
 // ECAA news feed. One league article per league per month; ECAA articles use league "ecaa" and a site-relative url.
-// pinned: true = featured at the top of the home-page sidebar (one item).
+// pinned: true = featured at the top of the home-page sidebar (several allowed, shown in array order).
 // url of league articles = external source. original = headline in the original language (null if English).
 window.ECAA_LEAGUES = {
   "ecaa": {
@@ -63,15 +63,6 @@ window.ECAA_NEWS = [
   {
     "date": "2026-11-10",
     "league": "ecaa",
-    "title": "Radek Duda: a player who says what he feels",
-    "original": null,
-    "source": "ECAA",
-    "url": "news/2026-11-10-radek-duda-says-what-he-feels.html",
-    "summary": "In a sport full of safe answers, former Sparta and Plzeň forward Radek Duda has never been afraid to say what he really thinks."
-  },
-  {
-    "date": "2026-11-10",
-    "league": "ecaa",
     "title": "Marek Herna appointed ULLH Head of Production",
     "image": "assets/img/news/marek-herna.jpg",
     "imageAlt": "Marek Herna in an ice hockey arena",
@@ -80,6 +71,16 @@ window.ECAA_NEWS = [
     "url": "news/2026-11-10-marek-herna-head-of-production.html",
     "summary": "ULLH has appointed Marek Herna, of fan experience agency Go4Gold, as Head of Production, responsible for entertainment in European university hockey.",
     "pinned": true
+  },
+  {
+    "date": "2026-11-10",
+    "league": "ecaa",
+    "title": "Radek Duda: a player who says what he feels",
+    "original": null,
+    "source": "ECAA",
+    "url": "news/2026-11-10-radek-duda-says-what-he-feels.html",
+    "pinned": true,
+    "summary": "In a sport full of safe answers, former Sparta and Plzeň forward Radek Duda has never been afraid to say what he really thinks."
   },
   {
     "date": "2026-11-07",

@@ -1,6 +1,6 @@
 // ECAA news feed rendering.
 // <div id="feed" data-limit="9" data-base="" data-group="month"> – cards (optionally grouped by month)
-// <ol id="feed" data-mode="list"> – compact chronological list (home sidebar); the pinned item goes to #featured
+// <ol id="feed" data-mode="list"> – compact chronological list (home sidebar); pinned items go to #featured
 
 (function () {
   const NEWS = window.ECAA_NEWS || [], LG = window.ECAA_LEAGUES || {};
@@ -10,7 +10,7 @@
   const group = box.dataset.group === "month";
   const listMode = box.dataset.mode === "list";
   const featBox = document.getElementById("featured");
-  const pinned = featBox ? NEWS.find((n) => n.pinned) : null;
+  const pins = featBox ? NEWS.filter((n) => n.pinned) : [];
   const chipsBox = document.getElementById("chips");
   const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (m) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[m]));
   const dfmt = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
@@ -41,18 +41,20 @@
       <a href="${esc(href)}"${ext}>${esc(n.title)}</a></li>`;
   }
 
-  if (pinned) {
-    const pInt = pinned.league === "ecaa";
-    featBox.innerHTML = `<a class="featured" href="${esc(pInt ? base + pinned.url : pinned.url)}"${pInt ? "" : ' target="_blank" rel="noopener"'}>
+  if (pins.length) {
+    featBox.innerHTML = pins.map((pinned) => {
+      const pInt = pinned.league === "ecaa";
+      return `<a class="featured" href="${esc(pInt ? base + pinned.url : pinned.url)}"${pInt ? "" : ' target="_blank" rel="noopener"'}>
       ${pinned.image ? `<img class="fimg" src="${esc((pInt ? base : "") + pinned.image)}" alt="${esc(pinned.imageAlt || "")}" loading="lazy">` : ""}
       <span class="wl">Featured · ${dfmt.format(d(pinned.date))}</span>
       <span class="ft">${esc(pinned.title)}</span>
       <span class="fs">${esc(pinned.summary)}</span>
-      <span class="fr">${pInt ? "Read the announcement →" : "Read on " + esc(pinned.source) + " ↗"}</span></a>`;
+      <span class="fr">${pInt ? "Read the article →" : "Read on " + esc(pinned.source) + " ↗"}</span></a>`;
+    }).join("");
   }
 
   function render() {
-    let items = NEWS.filter((n) => (filter === "all" || n.league === filter) && n !== pinned);
+    let items = NEWS.filter((n) => (filter === "all" || n.league === filter) && !pins.includes(n));
     if (listMode) { box.innerHTML = items.slice(0, limit || items.length).map(row).join(""); return; }
     if (limit) items = items.slice(0, limit);
     if (!items.length) { box.innerHTML = '<p class="empty">No articles for this league yet.</p>'; return; }
