@@ -76,6 +76,8 @@ window.ECAA_NEWS = [
     "date": "2026-11-10",
     "league": "ecaa",
     "title": "Radek Duda: a player who says what he feels",
+    "image": "assets/img/news/radek-duda.jpg",
+    "imageAlt": "Radek Duda on the ice",
     "badge": "R.D.",
     "original": null,
     "source": "ECAA",
