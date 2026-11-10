@@ -63,13 +63,13 @@ window.ECAA_NEWS = [
   {
     "date": "2026-11-10",
     "league": "ecaa",
-    "title": "Marek Herna appointed ULLH Head of Production",
+    "title": "Marek Herna named ULLH Director of Fan Experience & Game Presentation",
     "image": "assets/img/news/marek-herna.jpg?v=2",
     "imageAlt": "Marek Herna at an ice hockey rink",
     "original": null,
     "source": "ECAA",
     "url": "news/2026-11-10-marek-herna-head-of-production.html",
-    "summary": "ULLH has appointed Marek Herna, who brings experience from IIHF and FIBA world championships, as Head of Production for European university hockey.",
+    "summary": "ULLH has appointed Marek Herna, who brings experience from IIHF and FIBA world championships, as Director of Fan Experience & Game Presentation, in charge of game night at every league game.",
     "pinned": true
   },
   {
