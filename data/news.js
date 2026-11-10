@@ -69,7 +69,7 @@ window.ECAA_NEWS = [
     "original": null,
     "source": "ECAA",
     "url": "news/2026-11-10-marek-herna-head-of-production.html",
-    "summary": "ULLH has appointed Marek Herna, of fan experience agency Go4Gold, as Head of Production, responsible for entertainment in European university hockey.",
+    "summary": "ULLH has appointed Marek Herna, co-founder of Engineers Prague and Go4Gold project manager with IIHF and FIBA World Championships behind him, as Head of Production for European university hockey.",
     "pinned": true
   },
   {
