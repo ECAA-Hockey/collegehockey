@@ -61,6 +61,16 @@ window.ECAA_LEAGUES = {
 };
 window.ECAA_NEWS = [
   {
+    "date": "2026-11-10",
+    "league": "ecaa",
+    "title": "Marek Herna appointed ECAA Head of Production",
+    "original": null,
+    "source": "ECAA",
+    "url": "news/2026-11-10-marek-herna-head-of-production.html",
+    "summary": "Marek Herna will lead entertainment at university hockey games across Europe, aiming to give fans the best experience and help clubs monetise game-day activities.",
+    "pinned": true
+  },
+  {
     "date": "2026-11-07",
     "league": "usports",
     "title": "Buenaventura's strong season debut leads Cougars to tight win over UBC",
@@ -157,8 +167,7 @@ window.ECAA_NEWS = [
     "original": "Rekordních 10 tisíc diváků vidělo triumf Ostravské univerzity",
     "source": "Hokej.cz",
     "url": "https://www.hokej.cz/rekordnich-10-tisic-divaku-videlo-triumf-ostravske-univerzity/5098446",
-    "summary": "A sold-out crowd of 10,000 at Mustang Aréna watched Ostrava University beat VŠB–Technical University of Ostrava 3:1 in the Ostrava derby on 8 October, a new European record for university sport.",
-    "pinned": true
+    "summary": "A sold-out crowd of 10,000 at Mustang Aréna watched Ostrava University beat VŠB–Technical University of Ostrava 3:1 in the Ostrava derby on 8 October, a new European record for university sport."
   },
   {
     "date": "2026-10-08",
