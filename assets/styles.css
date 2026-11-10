@@ -143,6 +143,7 @@ details.src ul{font-size:13px;margin:6px 0 0;padding-left:18px;overflow-wrap:any
 .sidebar h2{font-size:24px}
 .featured{display:grid;gap:8px;background:var(--orange);color:var(--orange-ink);text-decoration:none;padding:18px 18px 16px;margin-bottom:26px}
 .featured .fimg{display:block;width:calc(100% + 36px);margin:-18px -18px 6px;aspect-ratio:4/3;object-fit:cover;object-position:50% 30%;max-width:none}
+.featured .fph{display:grid;place-items:center;background:#111;color:var(--orange);font-family:var(--f-display);font-weight:900;font-size:110px;line-height:1;letter-spacing:-.02em}
 .featured .wl{font-family:var(--f-display);font-weight:800;font-size:13px;letter-spacing:.1em;text-transform:uppercase}
 .featured .ft{font-family:var(--f-display);font-weight:900;font-size:30px;line-height:.98;text-transform:uppercase;text-wrap:balance}
 .featured .fs{font-size:14px;font-weight:500}
