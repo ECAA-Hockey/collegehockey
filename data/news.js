@@ -73,19 +73,6 @@ window.ECAA_NEWS = [
     "pinned": true
   },
   {
-    "date": "2026-11-10",
-    "league": "ecaa",
-    "title": "Radek Duda: a player who says what he feels",
-    "image": "assets/img/news/radek-duda.jpg",
-    "imageAlt": "Radek Duda on the ice",
-    "badge": "R.D.",
-    "original": null,
-    "source": "ECAA",
-    "url": "news/2026-11-10-radek-duda-says-what-he-feels.html",
-    "pinned": true,
-    "summary": "In a sport full of safe answers, former Sparta and Plzeň forward Radek Duda has never been afraid to say what he really thinks."
-  },
-  {
     "date": "2026-11-07",
     "league": "usports",
     "title": "Buenaventura's strong season debut leads Cougars to tight win over UBC",
