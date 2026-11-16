@@ -73,6 +73,24 @@ window.ECAA_NEWS = [
     "pinned": true
   },
   {
+    "date": "2026-11-09",
+    "league": "svk",
+    "title": "After the first third of the regular season – five games, five wins!",
+    "original": "Po prvej tretine základnej časti – päť zápasov, päť víťazstiev!",
+    "source": "UMB Hockey Team",
+    "url": "https://www.umbhockey.sk/po-prvej-tretine-zakladnej-casti-pat-zapasov-pat-vitazstiev/",
+    "summary": "HK UMB Banská Bystrica lead the University League unbeaten after five rounds with 15 points and a 28:9 goal difference, most recently winning 2:1 at Spartacus Košice on 4 November."
+  },
+  {
+    "date": "2026-11-09",
+    "league": "ncaa3",
+    "title": "Hobart hockey rises to No. 1 ahead of SUNYAC opener",
+    "original": null,
+    "source": "FingerLakes1.com",
+    "url": "https://www.fingerlakes1.com/2026/11/09/hobart-hockey-no-1-sunyac-opener-november-2026/",
+    "summary": "Unbeaten Hobart (4-0-0) moved to No. 1 in the USCHO.com Division III poll with 11 first-place votes, overtaking preseason No. 1 Hamilton after sweeping Utica 4-1 and 4-3."
+  },
+  {
     "date": "2026-11-07",
     "league": "usports",
     "title": "Buenaventura's strong season debut leads Cougars to tight win over UBC",
@@ -89,6 +107,24 @@ window.ECAA_NEWS = [
     "source": "ACHA",
     "url": "https://www.achahockey.org/drury-university-no-1-in-acha-m1-for-first-time-in-school-history",
     "summary": "Drury (10-1-0) rose to No. 1 in the ACHA Men's Division I ranking for the first time in school history after sweeping Minot State 5-4 in overtime and 2-1 in Minot, North Dakota."
+  },
+  {
+    "date": "2026-11-04",
+    "league": "ullh",
+    "title": "Ústí ends a year-long losing streak, beating the challengers from Ostrava in the Clash of Conquerors",
+    "original": "Ústí utnulo rok trvající černou sérii. V Souboji dobyvatelů zdolalo vyzyvatele z Ostravy",
+    "source": "Livesport.cz",
+    "url": "https://www.livesport.cz/zpravy/hokej-ullh-usti-utnulo-rok-trvajici-cernou-serii-v-souboji-dobyvatelu-zdolalo-vyzyvatele-z-ostravy/SnCGXtjI/",
+    "summary": "UJEP North Wings Ústí nad Labem beat BO Ostrava 6:2 in front of a record 1,380 fans, with a Lukáš Sochor hat-trick ending a 25-game losing run that had lasted 364 days."
+  },
+  {
+    "date": "2026-11-04",
+    "league": "acac",
+    "title": "Clippers Weekend Update",
+    "original": null,
+    "source": "MJ Independent",
+    "url": "https://www.mjindependent.com/sports/2026/11/4/clippers-weekend-update",
+    "summary": "The Briercrest Clippers swept the Augustana Vikings on the road, winning 6-1 on 30 October and 4-0 on 31 October."
   },
   {
     "date": "2026-11-02",
