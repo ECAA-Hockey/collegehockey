@@ -48,7 +48,7 @@ Pět kritérií; váhy: `games`, `live`, `avg`, `max` po 22,5 %, `tpm` 10 % (vá
 ## Rekordy návštěvnosti (index.html)
 
 - World: 104 173, Michigan v Michigan State, Michigan Stadium, Ann Arbor, 11. 12. 2010.
-- Europe: 10 000, VŠB-TUO v OSU (1:3), ULLH, Mustang Aréna, Ostrava, 8. 10. 2026 (předchozí 9 319, Bitva o Prahu, říjen 2025).
+- Europe: 11 016, Bitva o Prahu 2026 (semifinále UK–ČVUT 6:2, ČZU–VŠE 4:3), ULLH, Sportovní hala Fortuna, Praha, 19. 11. 2026 (předchozí 10 000, ostravské derby, Mustang Aréna, 8. 10. 2026).
 
 ## Nový ročník žebříčku (jednou ročně po sezóně)
 

@@ -61,6 +61,16 @@ window.ECAA_LEAGUES = {
 };
 window.ECAA_NEWS = [
   {
+    "date": "2026-11-20",
+    "league": "ullh",
+    "title": "Hockey fever in Prague: sold-out Holešovice sees a European record and a big upset",
+    "original": "Hokejová horečka v Praze. Vyprodané Holešovice viděly rekord i velké překvapení",
+    "source": "Livesport.cz",
+    "url": "https://www.livesport.cz/zpravy/hokej-ullh-hokejova-horecka-v-praze-vyprodane-holesovice-videly-rekord-i-velke-prekvapeni/0dQ1HHfE/",
+    "summary": "A sold-out crowd of 11,016 at the Battle of Prague set a new European indoor record for university sport, as UK Kings beat ČVUT 6:2 and ČZU edged VŠE 4:3 to reach the final.",
+    "pinned": true
+  },
+  {
     "date": "2026-11-10",
     "league": "ecaa",
     "title": "Marek Herna named ULLH Director of Fan Experience & Game Presentation",
@@ -107,15 +117,6 @@ window.ECAA_NEWS = [
     "source": "ACHA",
     "url": "https://www.achahockey.org/drury-university-no-1-in-acha-m1-for-first-time-in-school-history",
     "summary": "Drury (10-1-0) rose to No. 1 in the ACHA Men's Division I ranking for the first time in school history after sweeping Minot State 5-4 in overtime and 2-1 in Minot, North Dakota."
-  },
-  {
-    "date": "2026-11-04",
-    "league": "ullh",
-    "title": "Ústí ends a year-long losing streak, beating the challengers from Ostrava in the Clash of Conquerors",
-    "original": "Ústí utnulo rok trvající černou sérii. V Souboji dobyvatelů zdolalo vyzyvatele z Ostravy",
-    "source": "Livesport.cz",
-    "url": "https://www.livesport.cz/zpravy/hokej-ullh-usti-utnulo-rok-trvajici-cernou-serii-v-souboji-dobyvatelu-zdolalo-vyzyvatele-z-ostravy/SnCGXtjI/",
-    "summary": "UJEP North Wings Ústí nad Labem beat BO Ostrava 6:2 in front of a record 1,380 fans, with a Lukáš Sochor hat-trick ending a 25-game losing run that had lasted 364 days."
   },
   {
     "date": "2026-11-04",
