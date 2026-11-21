@@ -79,8 +79,7 @@ window.ECAA_NEWS = [
     "original": null,
     "source": "ECAA",
     "url": "news/2026-11-10-marek-herna-head-of-production.html",
-    "summary": "ULLH has appointed Marek Herna, who brings experience from IIHF and FIBA world championships, as Director of Fan Experience & Game Presentation, in charge of game night at every league game.",
-    "pinned": true
+    "summary": "ULLH has appointed Marek Herna, who brings experience from IIHF and FIBA world championships, as Director of Fan Experience & Game Presentation, in charge of game night at every league game."
   },
   {
     "date": "2026-11-09",
